@@ -15,7 +15,7 @@ docker run -itd --name speedtest-tracker \
     -e "DB_CONNECTION=sqlite" \
     -e "DB_DATABASE=/app/database.sqlite" \
     -v /path/to/directory:/app \
-    speedtest-tracker
+    ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
 
@@ -31,7 +31,7 @@ docker run -itd --name speedtest-tracker \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/app \
-    speedtest-tracker
+    ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
 
@@ -47,7 +47,7 @@ docker run -itd --name speedtest-tracker \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/app \
-    speedtest-tracker
+    ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
 {% endtabs %}
