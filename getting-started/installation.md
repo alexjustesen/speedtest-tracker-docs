@@ -59,3 +59,70 @@ docker run -d --name speedtest-tracker \
 ```
 {% endtab %}
 {% endtabs %}
+
+### Install with Docker Compose
+
+{% tabs %}
+{% tab title="Docker (Sqlite)" %}
+```yaml
+version: '3.3'
+services:
+    speedtest-tracker:
+        container_name: speedtest-tracker
+        ports:
+            - '8443:443'
+        environment:
+            - PUID=1000
+            - PGID=1000
+        volumes:
+            - '/path/to/directory:/config'
+        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+```
+{% endtab %}
+
+{% tab title="Docker (MariaDB/MySQL)" %}
+```yaml
+version: '3.3'
+services:
+    speedtest-tracker:
+        container_name: speedtest-tracker
+        ports:
+            - '8443:443'
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - DB_CONNECTION=mysql
+            - DB_HOST=
+            - DB_PORT=3306
+            - DB_DATABASE=speedtest_tracker
+            - DB_USERNAME=
+            - DB_PASSWORD=
+        volumes:
+            - '/path/to/directory:/config'
+        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+```
+{% endtab %}
+
+{% tab title="Docker (PostgreSQL)" %}
+```yaml
+version: '3.3'
+services:
+    speedtest-tracker:
+        container_name: speedtest-tracker
+        ports:
+            - '8443:443'
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - DB_CONNECTION=pgsql
+            - DB_HOST=
+            - DB_PORT=5432
+            - DB_DATABASE=speedtest_tracker
+            - DB_USERNAME=
+            - DB_PASSWORD=
+        volumes:
+            - '/path/to/directory:/config'
+        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+```
+{% endtab %}
+{% endtabs %}
