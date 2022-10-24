@@ -59,3 +59,11 @@ docker run -d --name speedtest-tracker \
 ```
 {% endtab %}
 {% endtabs %}
+
+### Reset the application
+
+{% hint style="warning" %}
+This is permanent so you better be sure you want to do this... You've been warned.
+{% endhint %}
+
+To completely reset the application and it's data you can run `php artisan app:install --force`

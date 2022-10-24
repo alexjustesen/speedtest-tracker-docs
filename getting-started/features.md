@@ -37,6 +37,6 @@ description: A full list of implemented features and those that are planned.
 |     [https://thenping.me/](https://thenping.me/)                                                                                | Planned |
 |     [https://healthchecks.io/](https://healthchecks.io/)                                                                        | Planned |
 |                                                                                                                                 |         |
-| Other                                                                                                                           |         |
+| **Other**                                                                                                                       |         |
 |     Backup / Restore                                                                                                            | Planned |
 |     Import data from [https://github.com/henrywhitaker3/Speedtest-Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker) | Planned |
