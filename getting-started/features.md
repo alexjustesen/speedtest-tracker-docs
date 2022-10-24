@@ -4,35 +4,39 @@ description: A full list of implemented features and those that are planned.
 
 # Features
 
-| Features                                                 |  Status |
-| -------------------------------------------------------- | ------: |
-| **Install options**                                      |         |
-|     Docker images for x86                                |    Done |
-|     Docker images for arm64                              | Planned |
-|     Bare metal                                           | Planned |
-|                                                          |         |
-| **Speedtest options**                                    |         |
-|     Scheduled tests                                      |    Done |
-|     Adhoc tests                                          |    Done |
-|     Manually specify a server                            |    Done |
-|     Threshold alerts                                     | Planned |
-|                                                          |         |
-| **Database support**                                     |         |
-|     SQLite (default)                                     |    Done |
-|     MariaDB / MySQL                                      |    Done |
-|     Postgresql                                           |    Done |
-|     InfluxDB v1                                          | Planned |
-|     InfluxDB v2                                          |    Done |
-|     Prometheus                                           | Planned |
-|                                                          |         |
-| **Notification Channels**                                |         |
-|     Mail                                                 | Planned |
-|     Discord                                              | Planned |
-|     Gotify                                               | Planned |
-|     Slack                                                | Planned |
-|     Telegram                                             | Planned |
-|                                                          |         |
-| **Application Monitoring**                               |         |
-|     [https://ohdear.app/](https://ohdear.app/)           | Planned |
-|     [https://thenping.me/](https://thenping.me/)         | Planned |
-|     [https://healthchecks.io/](https://healthchecks.io/) | Planned |
+| Features                                                                                                                        |  Status |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------: |
+| **Install options**                                                                                                             |         |
+|     Docker images for x86                                                                                                       |    Done |
+|     Docker images for arm64                                                                                                     | Planned |
+|     Bare metal                                                                                                                  | Planned |
+|                                                                                                                                 |         |
+| **Speedtest options**                                                                                                           |         |
+|     Scheduled tests                                                                                                             |    Done |
+|     Adhoc tests                                                                                                                 |    Done |
+|     Manually specify a server                                                                                                   |    Done |
+|     Threshold alerts                                                                                                            | Planned |
+|                                                                                                                                 |         |
+| **Database support**                                                                                                            |         |
+|     SQLite (default)                                                                                                            |    Done |
+|     MariaDB / MySQL                                                                                                             |    Done |
+|     Postgresql                                                                                                                  |    Done |
+|     InfluxDB v1                                                                                                                 | Planned |
+|     InfluxDB v2                                                                                                                 |    Done |
+|     Prometheus                                                                                                                  | Planned |
+|                                                                                                                                 |         |
+| **Notification Channels**                                                                                                       |         |
+|     Mail                                                                                                                        | Planned |
+|     Discord                                                                                                                     | Planned |
+|     Gotify                                                                                                                      | Planned |
+|     Slack                                                                                                                       | Planned |
+|     Telegram                                                                                                                    | Planned |
+|                                                                                                                                 |         |
+| **Application Monitoring**                                                                                                      |         |
+|     [https://ohdear.app/](https://ohdear.app/)                                                                                  | Planned |
+|     [https://thenping.me/](https://thenping.me/)                                                                                | Planned |
+|     [https://healthchecks.io/](https://healthchecks.io/)                                                                        | Planned |
+|                                                                                                                                 |         |
+| Other                                                                                                                           |         |
+|     Backup / Restore                                                                                                            | Planned |
+|     Import data from [https://github.com/henrywhitaker3/Speedtest-Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker) | Planned |
