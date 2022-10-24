@@ -11,10 +11,16 @@ description: A full list of implemented features and those that are planned.
 |     Docker images for arm64                                                                                                     | Planned |
 |     Bare metal                                                                                                                  | Planned |
 |                                                                                                                                 |         |
+| **Dashboard**                                                                                                                   |         |
+|     Show the most recent results                                                                                                |    Done |
+|     Pretty graphs                                                                                                               | Planned |
+|     History of results                                                                                                          |    Done |
+|                                                                                                                                 |         |
 | **Speedtest options**                                                                                                           |         |
 |     Scheduled tests                                                                                                             |    Done |
-|     Adhoc tests                                                                                                                 |    Done |
+|     Adhoc test                                                                                                                  |    Done |
 |     Manually specify a server                                                                                                   |    Done |
+|     Manually specify a list of servers                                                                                          | Planned |
 |     Threshold alerts                                                                                                            | Planned |
 |                                                                                                                                 |         |
 | **Database support**                                                                                                            |         |
