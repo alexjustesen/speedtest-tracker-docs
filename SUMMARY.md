@@ -5,6 +5,7 @@
 ## 🚀 Getting Started
 
 * [Installation](getting-started/installation.md)
+* [Features](getting-started/features.md)
 * [Authentication](getting-started/authentication.md)
 
 ## 🤹 Contributing
