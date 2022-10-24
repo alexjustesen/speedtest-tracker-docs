@@ -92,14 +92,28 @@ services:
             - PUID=1000
             - PGID=1000
             - DB_CONNECTION=mysql
-            - DB_HOST=
+            - DB_HOST=db
             - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
-            - DB_USERNAME=
-            - DB_PASSWORD=
+            - DB_USERNAME=speedy
+            - DB_PASSWORD=password
         volumes:
             - '/path/to/directory:/config'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+        depends_on:
+            - db
+    db:
+        image: mariadb:10
+        restart: always
+        environment:
+            - MARIADB_DATABASE=speedtest_tracker
+            - MARIADB_USER=speedy
+            - MARIADB_PASSWORD=password
+            - MARIADB_RANDOM_ROOT_PASSWORD=true
+        volumes:
+            - speedtest-db:/var/lib/mysql
+volumes:
+  speedtest-db:
 ```
 {% endtab %}
 
@@ -115,14 +129,28 @@ services:
             - PUID=1000
             - PGID=1000
             - DB_CONNECTION=pgsql
-            - DB_HOST=
+            - DB_HOST=db
             - DB_PORT=5432
             - DB_DATABASE=speedtest_tracker
-            - DB_USERNAME=
-            - DB_PASSWORD=
+            - DB_USERNAME=speedy
+            - DB_PASSWORD=password
         volumes:
             - '/path/to/directory:/config'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+        depends_on:
+            - db
+    db:
+        image: postgres:15
+        restart: always
+        environment:
+            - POSTGRES_DB=speedtest_tracker
+            - POSTGRES_USER=speedy
+            - POSTGRES_PASSWORD=password
+            - MARIADB_RANDOM_ROOT_PASSWORD
+        volumes:
+            - speedtest-db:/var/lib/postgresql/data
+volumes:
+  speedtest-db:
 ```
 {% endtab %}
 {% endtabs %}
