@@ -7,11 +7,7 @@ description: >-
 # 🐇 Speedtest Tracker
 
 {% hint style="info" %}
-These docs are up-to-date for version `0.1.0-alpha7`
-{% endhint %}
-
-{% hint style="warning" %}
-Speedtest Tracker is in active development, during this "alpha" phase expect things to change and maybe break.
+These docs are up-to-date for version `0.1.0-beta`
 {% endhint %}
 
 ### Introduction

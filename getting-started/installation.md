@@ -1,5 +1,7 @@
 # Installation
 
+<figure><img src="https://github.com/alexjustesen/speedtest-tracker/blob/main/.github/screenshots/results_screenshot.png?raw=true" alt=""><figcaption><p><em>Results</em></p></figcaption></figure>
+
 ### Required Configuration
 
 | Variable | Default Value | Description                                   |
@@ -154,3 +156,7 @@ volumes:
 ```
 {% endtab %}
 {% endtabs %}
+
+### Install on unRAID
+
+The unRAID community app store contains an app template managed by ZappyZap. Search "Speedtest Tracker" to install. Template support can be found [here](https://forums.unraid.net/topic/130245-support-devzwf-speedtest-tracker/).
