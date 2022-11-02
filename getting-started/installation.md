@@ -1,5 +1,7 @@
 # Installation
 
+<figure><img src="https://github.com/alexjustesen/speedtest-tracker/blob/main/.github/screenshots/results_screenshot.png?raw=true" alt=""><figcaption><p><em>Results</em></p></figcaption></figure>
+
 ### Required Configuration
 
 | Variable | Default Value | Description                                   |

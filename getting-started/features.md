@@ -4,6 +4,8 @@ description: A full list of implemented features and those that are planned.
 
 # Features
 
+<figure><img src="https://github.com/alexjustesen/speedtest-tracker/blob/main/.github/screenshots/dashboard_screenshot.png?raw=true" alt=""><figcaption><p><em>Dashboard</em></p></figcaption></figure>
+
 | Features                                                                                                                        |  Status |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------: |
 | **Install options**                                                                                                             |         |
@@ -22,7 +24,10 @@ description: A full list of implemented features and those that are planned.
 |     Adhoc test                                                                                                                  |    Done |
 |     Manually specify a server                                                                                                   |    Done |
 |     Manually specify a list of servers                                                                                          | Planned |
-|     Threshold alerts                                                                                                            | Planned |
+|     Threshold alerts                                                                                                            |    Done |
+|                                                                                                                                 |         |
+| **Ping options**                                                                                                                |         |
+|     Ping a domain or list of domains                                                                                            | Planned |
 |                                                                                                                                 |         |
 | **Database support**                                                                                                            |         |
 |     SQLite (default)                                                                                                            |    Done |
@@ -33,6 +38,7 @@ description: A full list of implemented features and those that are planned.
 |     Prometheus                                                                                                                  | Planned |
 |                                                                                                                                 |         |
 | **Notification Channels**                                                                                                       |         |
+|     In-app                                                                                                                      |    Done |
 |     Mail                                                                                                                        | Planned |
 |     Discord                                                                                                                     | Planned |
 |     Gotify                                                                                                                      | Planned |
