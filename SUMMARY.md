@@ -1,8 +1,9 @@
 # Table of contents
 
+* [Introduction](README.md)
+
 ## 🚀 Getting Started
 
-* [Introduction](README.md)
 * [Installation](getting-started/installation.md)
 * [Features](getting-started/features.md)
 
