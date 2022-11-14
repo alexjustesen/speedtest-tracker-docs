@@ -1,17 +1,19 @@
 # Table of contents
 
-* [🐇 Speedtest Tracker](README.md)
-
 ## 🚀 Getting Started
 
+* [Introduction](README.md)
 * [Installation](getting-started/installation.md)
 * [Features](getting-started/features.md)
-* [Authentication](getting-started/authentication.md)
-* [Notifications](getting-started/notifications/README.md)
-  * [Database](getting-started/notifications/database.md)
-  * [Mail](getting-started/notifications/mail.md)
-* [Data Platforms](getting-started/data-platforms/README.md)
-  * [InfluxDB2](getting-started/data-platforms/influxdb2.md)
+
+## ⚙ Settings
+
+* [Authentication](settings/authentication.md)
+* [Data Platforms](settings/data-platforms/README.md)
+  * [InfluxDB2](settings/data-platforms/influxdb2.md)
+* [Notifications](settings/notifications/README.md)
+  * [Database](settings/notifications/database.md)
+  * [Mail](settings/notifications/mail.md)
 
 ## 🤹 Contributing
 

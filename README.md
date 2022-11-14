@@ -4,7 +4,9 @@ description: >-
   Build using Laravel and the Speedtest CLI.
 ---
 
-# 🐇 Speedtest Tracker
+# Introduction
+
+
 
 {% hint style="info" %}
 These docs are up-to-date for version: `0.4.0`

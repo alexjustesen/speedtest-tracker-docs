@@ -11,7 +11,3 @@ Speedtest Tracker uses Filament for the admin panel. During the install process 
 {% hint style="info" %}
 A process for changing the admin account's email address and password is planned.
 {% endhint %}
-
-{% hint style="info" %}
-As of the latest version you can not disable authentication but this is a planned feature.
-{% endhint %}
