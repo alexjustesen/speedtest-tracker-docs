@@ -10,6 +10,8 @@
 * [Notifications](getting-started/notifications/README.md)
   * [Database](getting-started/notifications/database.md)
   * [Mail](getting-started/notifications/mail.md)
+* [Data Platforms](getting-started/data-platforms/README.md)
+  * [InfluxDB2](getting-started/data-platforms/influxdb2.md)
 
 ## 🤹 Contributing
 
