@@ -9,6 +9,13 @@
 | PUID     | 1000          | Update with your UID by running `id username` |
 | PGID     | 1000          | Update with your GID by running `id username` |
 
+### Port Mapping
+
+| Protocol | Internal port |
+| -------- | ------------- |
+| HTTP     | 80            |
+| HTTPS    | 443           |
+
 ### Install with Docker
 
 {% hint style="info" %}
@@ -19,6 +26,7 @@ MariaDB/MySQL and PostgreSQL instructions assumes you have a database instance t
 {% tab title="Docker (Sqlite)" %}
 ```bash
 docker run -d --name speedtest-tracker \
+    -p 8080:80 \
     -p 8443:443 \
     -e PUID=1000 \ 
     -e PGID=1000 \
@@ -30,6 +38,7 @@ docker run -d --name speedtest-tracker \
 {% tab title="Docker (MariaDB/MySQL)" %}
 ```bash
 docker run -d --name speedtest-tracker \
+    -p 8080:80 \
     -p 8443:443 \
     -e PUID=1000 \ 
     -e PGID=1000 \
@@ -47,6 +56,7 @@ docker run -d --name speedtest-tracker \
 {% tab title="Docker (PostgreSQL)" %}
 ```bash
 docker run -d --name speedtest-tracker \
+    -p 8080:80 \
     -p 8443:443 \
     -e PUID=1000 \ 
     -e PGID=1000 \
@@ -72,6 +82,7 @@ services:
     speedtest-tracker:
         container_name: speedtest-tracker
         ports:
+            - '8080:80'
             - '8443:443'
         environment:
             - PUID=1000
@@ -89,6 +100,7 @@ services:
     speedtest-tracker:
         container_name: speedtest-tracker
         ports:
+            - '8080:80'
             - '8443:443'
         environment:
             - PUID=1000
@@ -126,6 +138,7 @@ services:
     speedtest-tracker:
         container_name: speedtest-tracker
         ports:
+            - '8080:80'
             - '8443:443'
         environment:
             - PUID=1000
