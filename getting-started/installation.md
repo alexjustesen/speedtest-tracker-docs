@@ -32,6 +32,7 @@ docker run -d --name speedtest-tracker \
     -e PGID=1000 \
     -v /path/to/directory:/config \
     ghcr.io/alexjustesen/speedtest-tracker:latest
+    restart: unless-stopped
 ```
 {% endtab %}
 
@@ -50,6 +51,7 @@ docker run -d --name speedtest-tracker \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
     ghcr.io/alexjustesen/speedtest-tracker:latest
+    restart: unless-stopped
 ```
 {% endtab %}
 
@@ -68,6 +70,7 @@ docker run -d --name speedtest-tracker \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
     ghcr.io/alexjustesen/speedtest-tracker:latest
+    restart: unless-stopped
 ```
 {% endtab %}
 {% endtabs %}
@@ -90,6 +93,7 @@ services:
         volumes:
             - '/path/to/directory:/config'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+        restart: unless-stopped
 ```
 {% endtab %}
 
@@ -114,6 +118,7 @@ services:
         volumes:
             - '/path/to/directory:/config'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+        restart: unless-stopped
         depends_on:
             - db
     db:
@@ -152,6 +157,7 @@ services:
         volumes:
             - '/path/to/directory:/config'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+        restart: unless-stopped
         depends_on:
             - db
     db:
