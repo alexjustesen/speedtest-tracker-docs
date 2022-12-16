@@ -16,7 +16,7 @@ description: A full list of implemented features and those that are planned.
 |                                                                                                                                 |                                                                               |
 | **Dashboard**                                                                                                                   |                                                                               |
 |     Show the most recent results                                                                                                |                                                                          Done |
-|     Pretty graphs                                                                                                               |                                                                       Planned |
+|     Pretty graphs                                                                                                               |            [Done](https://github.com/alexjustesen/speedtest-tracker/pull/213) |
 |     History of results                                                                                                          |                                                                          Done |
 |                                                                                                                                 |                                                                               |
 | **Speedtest options**                                                                                                           |                                                                               |
