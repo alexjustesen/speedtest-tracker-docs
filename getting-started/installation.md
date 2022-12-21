@@ -183,6 +183,11 @@ The unRAID community app store contains an app template managed by ZappyZap. Sea
 ### Install on Synology
 
 Activate SSH on your Synology Device and connect to the command line.  
+Switch to root user with:
+
+```
+sudo su
+```
 
 Create your desired installation directory, for example:
 
