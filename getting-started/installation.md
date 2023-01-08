@@ -28,10 +28,10 @@ MariaDB/MySQL and PostgreSQL instructions assumes you have a database instance t
 docker run -d --name speedtest-tracker \
     -p 8080:80 \
     -p 8443:443 \
-    -e PUID=1000 \ 
+    -e PUID=1000 \
     -e PGID=1000 \
     -v /path/to/directory:/config \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
+    ghcr.io/alexjustesen/speedtest-tracker:latest \
     restart: unless-stopped
 ```
 {% endtab %}
@@ -41,7 +41,7 @@ docker run -d --name speedtest-tracker \
 docker run -d --name speedtest-tracker \
     -p 8080:80 \
     -p 8443:443 \
-    -e PUID=1000 \ 
+    -e PUID=1000 \
     -e PGID=1000 \
     -e "DB_CONNECTION=mysql" \
     -e "DB_HOST=" \
@@ -50,7 +50,7 @@ docker run -d --name speedtest-tracker \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
+    ghcr.io/alexjustesen/speedtest-tracker:latest \
     restart: unless-stopped
 ```
 {% endtab %}
@@ -60,7 +60,7 @@ docker run -d --name speedtest-tracker \
 docker run -d --name speedtest-tracker \
     -p 8080:80 \
     -p 8443:443 \
-    -e PUID=1000 \ 
+    -e PUID=1000 \
     -e PGID=1000 \
     -e "DB_CONNECTION=pgsql" \
     -e "DB_HOST=" \
@@ -69,7 +69,7 @@ docker run -d --name speedtest-tracker \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
+    ghcr.io/alexjustesen/speedtest-tracker:latest \
     restart: unless-stopped
 ```
 {% endtab %}
