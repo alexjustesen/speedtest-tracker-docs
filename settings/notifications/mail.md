@@ -6,7 +6,7 @@ Notifications sent to the mail channel will be emailed to the list of recipients
 
 ### Setting Up SMTP
 
-Speedtest Tracker uses SMTP maill protocol to send email messages, you can use any service that allows you to send emails via SMTP.&#x20;
+Speedtest Tracker uses SMTP mail protocol to send email messages, you can use any service that allows you to send emails via SMTP.&#x20;
 
 To configure the mail server settings you'll need to update the following variables in your `.env` file in your mounted data directory.
 

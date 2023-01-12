@@ -9,5 +9,5 @@ Speedtest Tracker uses Filament for the admin panel. During the install process 
 | `admin@example.com` | `password` |
 
 {% hint style="info" %}
-A process for changing the admin account's email address and password is planned.
+As of v0.11.0 you can add additional users and change the admin account's name, email and password.
 {% endhint %}
