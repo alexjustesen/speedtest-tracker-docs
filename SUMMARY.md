@@ -15,7 +15,7 @@
 * [Notifications](settings/notifications/README.md)
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
-  * [Telegram](settings/notifications/mail-1.md)
+  * [Telegram](settings/notifications/telegram.md)
 
 ## 🤹 Contributing
 
