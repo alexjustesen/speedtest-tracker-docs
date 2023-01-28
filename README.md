@@ -28,4 +28,4 @@ As far as I can tell [https://github.com/henrywhitaker3/Speedtest-Tracker](https
 
 #### Do you have a demo?
 
-No, but DB Tech over on YouTube has an awesome [video](https://www.youtube.com/watch?v=feArak6WCLw) showing you how to get Speedtest Tracker up and running with Portainer and a quick demo.
+No, but [DB Tech](https://www.youtube.com/watch?v=feArak6WCLw) and [Awesome Opens Source](https://www.youtube.com/watch?v=iyRUj77cjKg) over on YouTube have awesome videos showing you how to get Speedtest Tracker up and running with and a quick demo.
