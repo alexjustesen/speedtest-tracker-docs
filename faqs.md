@@ -13,3 +13,4 @@ description: A running list of frequently ask questions and their answers.
 Make sure `APP_URL` is updated to the correct url as the links in emails are based off this as the base url.
 
 </details>
+
