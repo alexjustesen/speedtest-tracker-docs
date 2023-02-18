@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Frequently Asked Questions](frequently-asked-questions.md)
 
 ## 🚀 Getting Started
 
