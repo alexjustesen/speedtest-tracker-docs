@@ -21,6 +21,7 @@ description: A full list of implemented features and those that are planned.
 | **Results**                                                                                                                     |                                                                               |
 |     History of failed and successful results                                                                                    |                                                                          Done |
 |     Filter by `scheduled` and \`successful                                                                                      |            [Done](https://github.com/alexjustesen/speedtest-tracker/pull/318) |
+|     Export selected results to CSV                                                                                              |            [Done](https://github.com/alexjustesen/speedtest-tracker/pull/370) |
 |                                                                                                                                 |                                                                               |
 | **Speedtest options**                                                                                                           |                                                                               |
 |     Scheduled tests                                                                                                             |                                                                          Done |

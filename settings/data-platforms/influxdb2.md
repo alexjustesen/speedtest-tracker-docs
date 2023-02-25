@@ -10,7 +10,7 @@ At this time only InfluxDB2 is supported, InfluxDB(1) is planned
 
 | Name   | Default             | Description                                                           |
 | ------ | ------------------- | --------------------------------------------------------------------- |
-| URL    | `blank`             | FQDM or IP address to the InfluxDB2 instance                          |
+| URL    | `blank`             | FQDN or IP address to the InfluxDB2 instance                          |
 | Org    | `blank`             | Organization on which you created your bucket in                      |
 | Bucket | `speedtest-tracker` | The name of the bucket you created in your org                        |
 | Token  | `blank`             | API token that has access to write to the org and bucket listed above |
