@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Frequently Asked Questions](faqs.md)
+* [Data Dictionary](data-dictionary.md)
 
 ## 🚀 Getting Started
 
@@ -17,6 +18,11 @@
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
   * [Telegram](settings/notifications/telegram.md)
+
+## 🖥 API
+
+* [Getting Started](api/getting-started.md)
+* [Latest Result](api/latest-result.md)
 
 ## 🤹 Contributing
 

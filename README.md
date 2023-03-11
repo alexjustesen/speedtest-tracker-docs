@@ -9,7 +9,7 @@ description: >-
 
 
 {% hint style="info" %}
-These docs are up-to-date for version: `v0.11.2`
+These docs are up-to-date for version: `v0.11.9`
 {% endhint %}
 
 ### Introduction
