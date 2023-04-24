@@ -22,6 +22,11 @@
 MariaDB/MySQL and PostgreSQL instructions assumes you have a database instance that already exists.
 {% endhint %}
 
+{% hint style="info" %}
+In case you want to make sure that your ssl certs are kept between stops and starts make sure that you map /etc/ssl/web 
+to make it persistent
+{% endhint %}
+
 {% tabs %}
 {% tab title="Docker (Sqlite)" %}
 ```bash
@@ -31,6 +36,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e PUID=1000 \
     -e PGID=1000 \
     -v /path/to/directory:/config \
+    -v /path/to/directory/web:/etc/ssl/web \
     ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
@@ -49,6 +55,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
+    -v /path/to/directory/web:/etc/ssl/web \
     ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
@@ -67,6 +74,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e "DB_USERNAME=" \
     -e "DB_PASSWORD=" \
     -v /path/to/directory:/config \
+    -v /path/to/directory/web:/etc/ssl/web \
     ghcr.io/alexjustesen/speedtest-tracker:latest
 ```
 {% endtab %}
@@ -89,6 +97,7 @@ services:
             - PGID=1000
         volumes:
             - '/path/to/directory:/config'
+            - '/path/to/directory/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
 ```
@@ -114,6 +123,7 @@ services:
             - DB_PASSWORD=password
         volumes:
             - '/path/to/directory:/config'
+            - '/path/to/directory/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
         depends_on:
@@ -153,6 +163,7 @@ services:
             - DB_PASSWORD=password
         volumes:
             - '/path/to/directory:/config'
+            - '/path/to/directory/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
         depends_on:
