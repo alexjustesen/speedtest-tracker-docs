@@ -10,7 +10,7 @@ To configure Telegram for notifications you'll need to have a [Telegram](https:/
 
 1. Create a Telegram bot by starting a message with `@BotFather`.
 2. Using the bot's token ID to add the following variable in your `.env` file in your mounted data directory. `TELEGRAM_BOT_TOKEN=putyourtokenhere`
-3. Next you'll need your own chat ID, start a chat with `@Get_Id_Bot` and add that to your "Recipients" list and click "Save".
+3. Next you'll need your own chat ID (hint: it's not the bot ID), start a chat with `@Get_Id_Bot` and add that to your "Recipients" list and click "Save".
 4. Start a chat with your bot your created in step 1 to start receiving notification from yout Telegram bot.
 
 ### Triggers
