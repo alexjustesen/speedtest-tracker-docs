@@ -15,10 +15,7 @@ To configure Telegram for notifications you'll need to have a [Telegram](https:/
 
 ### Triggers
 
-| Name                          | Description                                                                       |
-| ----------------------------- | --------------------------------------------------------------------------------- |
-| On completed speedtest        | On each successful speedtest a notification will be send to the application.      |
-| On absolute threshold failure | On any absolute threshold failure a notification will be send to the application. |
+<table><thead><tr><th width="237">Name</th><th>Description</th></tr></thead><tbody><tr><td>On completed speedtest</td><td>On each successful speedtest a notification will be send to the application.</td></tr><tr><td>On absolute threshold failure</td><td>On any absolute threshold failure a notification will be send to the application.</td></tr></tbody></table>
 
 ### Recipients
 

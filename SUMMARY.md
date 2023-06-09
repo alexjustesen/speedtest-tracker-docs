@@ -1,13 +1,14 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Features](features.md)
 * [Frequently Asked Questions](faqs.md)
 * [Data Dictionary](data-dictionary.md)
 
 ## 🚀 Getting Started
 
 * [Installation](getting-started/installation.md)
-* [Features](getting-started/features.md)
+* [Environment Variables](getting-started/environment-variables.md)
 
 ## ⚙ Settings
 
