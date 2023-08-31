@@ -23,32 +23,14 @@ MariaDB/MySQL and PostgreSQL instructions assumes you have a database instance t
 {% endhint %}
 
 {% hint style="info" %}
-In case you want to make sure that your ssl certs are kept between stops and starts make sure that you map /etc/ssl/web 
-to make it persistent
+In case you want to make sure that your ssl certs are kept between stops and starts make sure that you map /etc/ssl/web to make it persistent
 {% endhint %}
 
 {% hint style="info" %}
-In order to make sure timestamps in the UI and logs are correct, make sure to configure the TZ env variable and also
-the /etc/localtime volume mapping, as per the examples below. Replace the geo location of TZ with your geo location.
+In order to make sure timestamps in the UI and logs are correct, make sure to configure the TZ env variable and also the /etc/localtime volume mapping, as per the examples below. Replace the geo location of TZ with your geo location.
 {% endhint %}
 
-
 {% tabs %}
-{% tab title="Docker (Sqlite)" %}
-```bash
-docker run -d --name speedtest-tracker --restart unless-stopped \
-    -p 8080:80 \
-    -p 8443:443 \
-    -e PUID=1000 \
-    -e PGID=1000 \
-    -e TZ=America/Chicago \
-    -v /etc/localtime:/etc/localtime:ro \
-    -v /path/to/directory:/config \
-    -v /path/to/directory/web:/etc/ssl/web \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
-```
-{% endtab %}
-
 {% tab title="Docker (MariaDB/MySQL)" %}
 ```bash
 docker run -d --name speedtest-tracker --restart unless-stopped \
@@ -95,28 +77,6 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
 ### Install with Docker Compose
 
 {% tabs %}
-{% tab title="Docker (Sqlite)" %}
-```yaml
-version: '3.3'
-services:
-    speedtest-tracker:
-        container_name: speedtest-tracker
-        ports:
-            - '8080:80'
-            - '8443:443'
-        environment:
-            - PUID=1000
-            - PGID=1000
-            - TZ=America/Chicago
-        volumes:
-            - '/etc/localtime:/etc/localtime:ro'
-            - '/path/to/directory:/config'
-            - '/path/to/directory/web:/etc/ssl/web'
-        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
-        restart: unless-stopped
-```
-{% endtab %}
-
 {% tab title="Docker (MariaDB/MySQL)" %}
 ```yaml
 version: '3.3'
