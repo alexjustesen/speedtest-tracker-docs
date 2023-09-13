@@ -7,13 +7,21 @@
 
 ## 🚀 Getting Started
 
-* [Installation](getting-started/installation.md)
+* [Installation](getting-started/installation/README.md)
+  * [Using Docker or Docker Compose](getting-started/installation/installation.md)
+  * [Using Synology](getting-started/installation/installation-1.md)
+  * [Using Unraid](getting-started/installation/installation-2.md)
 * [Environment Variables](getting-started/environment-variables.md)
+* [Page](getting-started/page.md)
+
+## 🔑 Security
+
+* [Authentication](security/authentication.md)
+* [Authorization](security/authorization.md)
 
 ## ⚙ Settings
 
-* [Authentication](settings/authentication.md)
-* [Data Platforms](settings/data-platforms/README.md)
+* [Data Integrations](settings/data-platforms/README.md)
   * [InfluxDB2](settings/data-platforms/influxdb2.md)
 * [Notifications](settings/notifications/README.md)
   * [Database](settings/notifications/database.md)

@@ -6,11 +6,11 @@ description: >-
 
 # Introduction
 
-
-
 {% hint style="info" %}
-These docs are up-to-date for version: `v0.11.18`
+These docs are up-to-date for version: `v0.12.beta.6`
 {% endhint %}
+
+<figure><img src=".gitbook/assets/dashboard_screenshot.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Introduction
 
