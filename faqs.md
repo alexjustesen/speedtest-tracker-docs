@@ -45,13 +45,3 @@ By default `APP_DEBUG` is set to `false` in production to prevent verbose error 
 5. Once the issue is resolved you can remove the `APP_DEBUG` environment variable
 
 </details>
-
-### User
-
-<details>
-
-<summary></summary>
-
-
-
-</details>
