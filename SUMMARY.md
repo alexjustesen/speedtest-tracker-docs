@@ -12,7 +12,6 @@
   * [Using Synology](getting-started/installation/installation-1.md)
   * [Using Unraid](getting-started/installation/installation-2.md)
 * [Environment Variables](getting-started/environment-variables.md)
-* [Page](getting-started/page.md)
 
 ## 🔑 Security
 
@@ -27,6 +26,10 @@
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
   * [Telegram](settings/notifications/telegram.md)
+
+## 👀 Other
+
+* [Commands](other/commands.md)
 
 ## 🖥 API
 
