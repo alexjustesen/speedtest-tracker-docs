@@ -47,7 +47,21 @@ As of `v0.12.0` the app key is generated on start-up and it is **OK to ignore th
 
 </details>
 
+### Settings
+
+<details>
+
+<summary>Speedtest server</summary>
+
+#### Q: Why do only some servers have the server name in the list?
+
+By default Ookla's CLI only returns the "closest" 20 servers. If the server you've selected isn't in that list Speedtest Tracker can label it.
+
+</details>
+
 ### Other
+
+
 
 <details>
 
