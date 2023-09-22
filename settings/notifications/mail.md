@@ -17,6 +17,7 @@ MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="Speedtest Tracker"
 ```
 
 ### Triggers
