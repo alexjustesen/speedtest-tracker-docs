@@ -29,6 +29,7 @@
 
 ## 👀 Other
 
+* [Caching](other/caching.md)
 * [Commands](other/commands.md)
 
 ## 🖥 API
