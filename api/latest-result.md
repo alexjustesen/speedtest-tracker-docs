@@ -8,15 +8,7 @@ No authentication required.
 
 {% swagger method="get" path="" baseUrl="/api/speedtest/latest" summary="Get the latest speedtest result" expanded="false" %}
 {% swagger-description %}
-Provides backwards compatibility for 
-
-[Homepage](https://github.com/benphelps/homepage)
-
- and 
-
-[Organizr](https://github.com/causefx/Organizr)
-
- home lab dashboards.
+Provides backwards compatibility for [Homepage](https://github.com/benphelps/homepage) and [Organizr](https://github.com/causefx/Organizr) home lab dashboards.
 {% endswagger-description %}
 
 {% swagger-response status="200: OK" description="" %}

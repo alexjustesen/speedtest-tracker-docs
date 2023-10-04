@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Features](features.md)
 * [Frequently Asked Questions](faqs.md)
-* [Data Dictionary](data-dictionary.md)
 
 ## 🚀 Getting Started
 
@@ -31,6 +30,7 @@
 
 * [Caching](other/caching.md)
 * [Commands](other/commands.md)
+* [Data Dictionary](other/data-dictionary.md)
 
 ## 🖥 API
 

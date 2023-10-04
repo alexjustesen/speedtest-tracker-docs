@@ -61,8 +61,6 @@ By default Ookla's CLI only returns the "closest" 20 servers. If the server you'
 
 ### Other
 
-
-
 <details>
 
 <summary>I'm getting a <code>500 | SERVER ERROR</code> error</summary>
@@ -73,6 +71,7 @@ By default `APP_DEBUG` is set to `false` in production to prevent verbose error 
 2. Restart the container
 3. Reproduce the error by visiting the page or performing the action that caused the error
 4. View the output in the UI or in the logs to help resolve the issue, if you can not resolve it open an issue in the [GitHub](https://github.com/alexjustesen/speedtest-tracker/issues) repository
-5. Once the issue is resolved you can remove the `APP_DEBUG` environment variable
+5. In the output the line that starts with `[timestamp] production.ERROR:` is the error the server ran into
+6. Once the issue is resolved you can remove the `APP_DEBUG` environment variable
 
 </details>
