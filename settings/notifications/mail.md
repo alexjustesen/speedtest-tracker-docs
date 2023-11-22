@@ -10,6 +10,10 @@ Speedtest Tracker uses SMTP mail protocol to send email messages, you can use an
 
 To configure the mail server settings you'll need to update the following variables in your `.env` file or add them to the environment variables passed into the container.
 
+{% hint style="warning" %}
+Make sure these are not set in both your `.env` file or your `docker-compose.yml` file as that can cause issues.
+{% endhint %}
+
 ```
 MAIL_MAILER=smtp
 MAIL_HOST=mailhog
