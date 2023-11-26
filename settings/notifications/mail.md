@@ -8,7 +8,7 @@ Notifications sent to the mail channel will be emailed to the list of recipients
 
 Speedtest Tracker uses SMTP mail protocol to send email messages, you can use any service that allows you to send emails via SMTP.&#x20;
 
-To configure the mail server settings you'll need to update the following variables in your `.env` file or add them to the environment variables passed into the container.
+To configure the mail server settings you'll need to update the following variables in your `.env` file or add them to the environment variables passed into the container. When choosing mail encryption both `ssl` and `tls` protocols are supported and you'll want to check with your mail provider for which to use and which port.
 
 {% hint style="warning" %}
 Make sure these are not set in both your `.env` file or your `docker-compose.yml` file as that can cause issues.
