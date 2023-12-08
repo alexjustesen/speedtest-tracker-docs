@@ -7,7 +7,7 @@ description: >-
 # Using Synology
 
 {% hint style="warning" %}
-These directions are out-of-date as Synology has changed the `Docker` application to `Container Manager.`
+The following directions are for the old `Docker` application, if you're using the container manager you can follow the [installation.md](installation.md "mention") instructions.
 {% endhint %}
 
 ### Install on a Synology NAS

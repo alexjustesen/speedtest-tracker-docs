@@ -59,6 +59,26 @@ By default Ookla's CLI only returns the "closest" 20 servers. If the server you'
 
 </details>
 
+### Time zones
+
+<details>
+
+<summary>How do I set the display and schedule time zone?</summary>
+
+Your local time can be set in the UI under `Settings -> General -> Time zone`.
+
+</details>
+
+<details>
+
+<summary>My display timestamps or scheduled tests aren't correct.</summary>
+
+Speedtest Tracker assumes your application and database containers are set to `UTC`, the only location to update the time zone is in the UI.
+
+If you're passing a `TZ` environment variable or have manually changed the time zone of either the application or database containers this can affect how timestamps and the schedules tests are displayed and run.
+
+</details>
+
 ### Other
 
 <details>

@@ -29,10 +29,8 @@ services:
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
-            - TZ=America/Chicago
         volumes:
-            - '/etc/localtime:/etc/localtime:ro'
-            - '/path/to/directory:/config'
+            - speedtest-app:/config
             - '/path/to/directory/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
@@ -49,6 +47,7 @@ services:
         volumes:
             - speedtest-db:/var/lib/mysql
 volumes:
+  speedtest-app:
   speedtest-db:
 ```
 {% endtab %}
@@ -71,10 +70,8 @@ services:
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
-            - TZ=America/Chicago
         volumes:
-            - '/etc/localtime:/etc/localtime:ro'
-            - '/path/to/directory:/config'
+            - speedtest-app:/config
             - '/path/to/directory/web:/etc/ssl/web'
         image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
         restart: unless-stopped
@@ -90,6 +87,7 @@ services:
         volumes:
             - speedtest-db:/var/lib/postgresql/data
 volumes:
+  speedtest-app
   speedtest-db:
 ```
 {% endtab %}
@@ -111,14 +109,12 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
-    -e TZ=America/Chicago \
     -e DB_CONNECTION=mysql \
     -e DB_HOST= \
     -e DB_PORT=3306 \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
-    -v /etc/localtime:/etc/localtime:ro \
     -v /path/to/directory:/config \
     -v /path/to/directory/web:/etc/ssl/web \
     ghcr.io/alexjustesen/speedtest-tracker:latest
@@ -138,8 +134,6 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
-    -e TZ=America/Chicago \
-    -v /etc/localtime:/etc/localtime:ro \
     -v /path/to/directory:/config \
     -v /path/to/directory/web:/etc/ssl/web \
     ghcr.io/alexjustesen/speedtest-tracker:latest
