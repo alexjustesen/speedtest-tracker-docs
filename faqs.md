@@ -73,9 +73,9 @@ Your local time can be set in the UI under `Settings -> General -> Time zone`.
 
 <summary>My display timestamps or scheduled tests aren't correct.</summary>
 
-Speedtest Tracker assumes your application and database containers are set to `UTC`, the only location to update the time zone is in the UI.
+Speedtest Tracker assumes your application and database containers are set to `UTC` by default.
 
-If you're passing a `TZ` environment variable or have manually changed the time zone of either the application or database containers this can affect how timestamps and the schedules tests are displayed and run.
+If your database instance runs with a local time zone set it needs to **match** that set in `Time zone` and `Database has time zone` needs to be enabled for the offset to be correctly displayed.
 
 </details>
 

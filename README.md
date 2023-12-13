@@ -7,7 +7,7 @@ description: >-
 # Introduction
 
 {% hint style="info" %}
-These docs are up-to-date for version: `v0.12.1`
+These docs are up-to-date for version: `v0.14.0`
 {% endhint %}
 
 <figure><img src=".gitbook/assets/dashboard_screenshot.jpg" alt=""><figcaption></figcaption></figure>
