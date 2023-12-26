@@ -87,7 +87,7 @@ services:
         volumes:
             - speedtest-db:/var/lib/postgresql/data
 volumes:
-  speedtest-app
+  speedtest-app:
   speedtest-db:
 ```
 {% endtab %}
