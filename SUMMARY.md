@@ -10,6 +10,7 @@
   * [Using Docker or Docker Compose](getting-started/installation/installation.md)
   * [Using Synology](getting-started/installation/installation-1.md)
   * [Using Unraid](getting-started/installation/installation-2.md)
+  * [Kubernetes](getting-started/installation/kubernetes.md)
 * [Environment Variables](getting-started/environment-variables.md)
 
 ## 🔑 Security
