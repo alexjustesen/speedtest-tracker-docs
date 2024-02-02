@@ -10,14 +10,9 @@ description: A running list of frequently ask questions and their answers.
 
 <summary>Using SQLite</summary>
 
-SQLite is supported by Laravel as a database driver but it is no longer the recommended driver for this project. To setup SQLite as your database driver of choice use the directions below.
+SQLite is supported by Laravel as a database driver but it is not the default or recommended driver for this project. To setup SQLite as your database driver of choice use the directions below.
 
-`v0.11.22` dropped SQLite support, to reconnect your existing database you can start on Step 3.
-
-1. Create a volume called `speedtest-tracker` and attach it to the container.
-2. Create a file called `database.sqlite`, you can do this by running `touch database.sqlite` in the mounted volume or create it in the mounted directory.
-3. Update your environment variables to only include the following for under the `DB_` prefix: `DB_CONNECTION=sqlite` and `DB_DATABASE=/config/database.sqlite`.
-4. Restart the container.
+Directions for using SQLite can now be found on the [Database Drivers](getting-started/database-drivers.md) page.
 
 </details>
 

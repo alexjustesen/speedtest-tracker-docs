@@ -11,7 +11,7 @@
   * [Using Synology](getting-started/installation/installation-1.md)
   * [Using Unraid](getting-started/installation/installation-2.md)
   * [Kubernetes](getting-started/installation/kubernetes.md)
-* [Database](getting-started/database.md)
+* [Database Drivers](getting-started/database-drivers.md)
 * [Environment Variables](getting-started/environment-variables.md)
 
 ## 🔑 Security
