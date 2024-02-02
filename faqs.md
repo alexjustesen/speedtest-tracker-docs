@@ -16,7 +16,7 @@ SQLite is supported by Laravel as a database driver but it is no longer the reco
 
 1. Create a volume called `speedtest-tracker` and attach it to the container.
 2. Create a file called `database.sqlite`, you can do this by running `touch database.sqlite` in the mounted volume or create it in the mounted directory.
-3. Update your environment variables to only include the following for under the `DB_` prefix: `DB_CONNECTION=sqlite` and `DB_HOST=/config/database.sqlite`.
+3. Update your environment variables to only include the following for under the `DB_` prefix: `DB_CONNECTION=sqlite` and `DB_DATABASE=/config/database.sqlite`.
 4. Restart the container.
 
 </details>
