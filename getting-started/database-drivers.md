@@ -31,10 +31,10 @@ To use SQLite follow the steps below to create your database file:&#x20;
 2. Create a file called `database.sqlite`, you can do this by running `touch database.sqlite` in the mounted volume or create it in the mounted directory.
 3. Update your environment variables to only include the following environment variables in the table below.
 
-| Environment Variable | Value                                                                             |
-| -------------------- | --------------------------------------------------------------------------------- |
-| `DB_CONNECTION`      | `sqlite`                                                                          |
-| `DB_DATABASE`        | This should be the path to your SQLite database (i.e. `/config/database.sqlite`). |
+| Environment Variable | Value                     |
+| -------------------- | ------------------------- |
+| `DB_CONNECTION`      | `sqlite`                  |
+| `DB_DATABASE`        | `/config/database.sqlite` |
 
 #### Postgres
 
