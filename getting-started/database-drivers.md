@@ -14,7 +14,7 @@ MariaDB ships as the default database that's included in the `docker-compose.yml
 
 | Environment Variable | Value                                                                                                          |
 | -------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `DB_DRIVER`          | <p><code>mysql</code>  </p><p></p><p>The <code>mysql</code> driver can be used for both MySQL and MariaDB.</p> |
+| `DB_CONNECTION`      | <p><code>mysql</code>  </p><p></p><p>The <code>mysql</code> driver can be used for both MySQL and MariaDB.</p> |
 | `DB_HOST`            | The FQDN or address to the database instance.                                                                  |
 | `DB_PORT`            | `3306` is the default port but can depend on your setup.                                                       |
 | `DB_DATABASE`        | Name of the database you'll connect to.                                                                        |
@@ -33,14 +33,14 @@ To use SQLite follow the steps below to create your database file:&#x20;
 
 | Environment Variable | Value                                                                             |
 | -------------------- | --------------------------------------------------------------------------------- |
-| `DB_DRIVER`          | `sqlite`                                                                          |
+| `DB_CONNECTION`      | `sqlite`                                                                          |
 | `DB_DATABASE`        | This should be the path to your SQLite database (i.e. `/config/database.sqlite`). |
 
 #### Postgres
 
 | Environment Variable | Value                                                    |
 | -------------------- | -------------------------------------------------------- |
-| `DB_DRIVER`          | `pgsql`                                                  |
+| `DB_CONNECTION`      | `pgsql`                                                  |
 | `DB_HOST`            | The FQDN or address to the database instance.            |
 | `DB_PORT`            | `5432` is the default port but can depend on your setup. |
 | `DB_DATABASE`        | Name of the database you'll connect to.                  |
