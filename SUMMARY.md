@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Features](features.md)
 * [Frequently Asked Questions](faqs.md)
+* [Changelog](changelog.md)
 
 ## 🚀 Getting Started
 

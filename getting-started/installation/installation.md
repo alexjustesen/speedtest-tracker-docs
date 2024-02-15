@@ -18,8 +18,8 @@ services:
     speedtest-tracker:
         container_name: speedtest-tracker
         ports:
-            - '8080:80'
-            - '8443:443'
+            - 8080:80
+            - 8443:443
         environment:
             - PUID=1000
             - PGID=1000
@@ -30,9 +30,9 @@ services:
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
         volumes:
-            - speedtest-app:/config
-            - '/path/to/directory/web:/etc/ssl/web'
-        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+            - /path/to/data:/config
+            - /path/to/directory/web:/etc/ssl/web
+        image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
         depends_on:
             - db
@@ -47,7 +47,6 @@ services:
         volumes:
             - speedtest-db:/var/lib/mysql
 volumes:
-  speedtest-app:
   speedtest-db:
 ```
 {% endtab %}
@@ -59,8 +58,8 @@ services:
     speedtest-tracker:
         container_name: speedtest-tracker
         ports:
-            - '8080:80'
-            - '8443:443'
+            - 8080:80
+            - 8443:443
         environment:
             - PUID=1000
             - PGID=1000
@@ -71,9 +70,9 @@ services:
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
         volumes:
-            - speedtest-app:/config
-            - '/path/to/directory/web:/etc/ssl/web'
-        image: 'ghcr.io/alexjustesen/speedtest-tracker:latest'
+            - /path/to/data:/config
+            - /path/to/directory/web:/etc/ssl/web
+        image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
         depends_on:
             - db
@@ -87,7 +86,6 @@ services:
         volumes:
             - speedtest-db:/var/lib/postgresql/data
 volumes:
-  speedtest-app:
   speedtest-db:
 ```
 {% endtab %}
@@ -115,9 +113,9 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
-    -v /path/to/directory:/config \
+    -v /path/to/data:/config \
     -v /path/to/directory/web:/etc/ssl/web \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
+    lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
 
@@ -134,10 +132,9 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
-    -v /path/to/directory:/config \
+    -v /path/to/data:/config \
     -v /path/to/directory/web:/etc/ssl/web \
-    ghcr.io/alexjustesen/speedtest-tracker:latest
+    lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
 {% endtabs %}
-
