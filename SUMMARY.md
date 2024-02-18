@@ -43,7 +43,7 @@
 
 ## 🤹 Contributing
 
-* [Setup Your Environment](contributing/setup-your-environment.md)
+* [Development Environment](contributing/setup-your-environment.md)
 
 ## 🔗 More
 
