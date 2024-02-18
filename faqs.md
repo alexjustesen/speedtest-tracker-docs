@@ -4,18 +4,6 @@ description: A running list of frequently ask questions and their answers.
 
 # Frequently Asked Questions
 
-### Database
-
-<details>
-
-<summary>Using SQLite</summary>
-
-SQLite is supported by Laravel as a database driver but it is not the default or recommended driver for this project. To setup SQLite as your database driver of choice use the directions below.
-
-Directions for using SQLite can now be found on the [Database Drivers](getting-started/database-drivers.md) page.
-
-</details>
-
 ### Docker
 
 <details>
