@@ -8,4 +8,7 @@ description: >-
 
 ### Install on Unraid OS
 
-The unRAID community app store contains an app template managed by ZappyZap. Search "Speedtest Tracker" to install. Template support can be found [here](https://forums.unraid.net/topic/130245-support-devzwf-speedtest-tracker/).
+Use the Community Applications plugin to install one of the templates below by searching for "Speedtest Tracker".
+
+* LinuxServer.io - [Template support](https://github.com/linuxserver/docker-speedtest-tracker)
+* ZappyZap - [Template support](https://forums.unraid.net/topic/130245-support-devzwf-speedtest-tracker/)
