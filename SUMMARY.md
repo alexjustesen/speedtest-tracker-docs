@@ -15,6 +15,10 @@
 * [Database Drivers](getting-started/database-drivers.md)
 * [Environment Variables](getting-started/environment-variables.md)
 
+## 🆘 Help
+
+* [Result Error Messages](help/result-error-messages.md)
+
 ## 🔑 Security
 
 * [Authentication](security/authentication.md)
