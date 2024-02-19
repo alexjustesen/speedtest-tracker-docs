@@ -17,7 +17,7 @@
 
 ## 🆘 Help
 
-* [Result Error Messages](help/result-error-messages.md)
+* [Error Messages](help/error-messages.md)
 
 ## 🔑 Security
 
