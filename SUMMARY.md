@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Features](features.md)
-* [Frequently Asked Questions](faqs.md)
 * [Changelog](changelog.md)
 
 ## 🚀 Getting Started
@@ -18,6 +17,7 @@
 ## 🆘 Help
 
 * [Error Messages](help/error-messages.md)
+* [Frequently Asked Questions](help/faqs.md)
 
 ## 🔑 Security
 
