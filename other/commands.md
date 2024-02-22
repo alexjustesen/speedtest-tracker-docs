@@ -11,6 +11,8 @@ Commands are intended to be run from within the CLI of the container and from th
 * In my build the root directory is located at: `/var/www/html`
 * In LinuxServer's build the root directory is located at: `/app/www`
 
+When using the commands below they should be prefixed with `php artisan`, so the `about` command will look like `php artisan about`.
+
 ### Core commands
 
 Core commands exist at the framework level and might be extended to provide additional functionality.
