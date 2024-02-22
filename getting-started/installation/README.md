@@ -1,6 +1,6 @@
 # Installation
 
-Speedtest Tracker can be run on a variety of platforms including using [Docker and Docker Compose](installation.md) along with [Synology NAS](installation-1.md) devices and on [Unraid OS](installation-2.md).
+Speedtest Tracker can be run on a variety of platforms including using [Docker and Docker Compose](installation.md) along with [Synology NAS](synology.md) devices and on [Unraid OS](unraid.md).
 
 {% hint style="info" %}
 Docker Compose is the recommended platform.

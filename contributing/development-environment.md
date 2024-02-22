@@ -111,6 +111,17 @@ sail artisan queue:work
 
 ***
 
+### Lint your code before opening a PR or committing changes
+
+To keep PHP's code style consistant across multiple contributors a successful lint workflow is required to pass. Check your code quality locally by running the commnand below and fixing it's recommendations.
+
+```bash
+./vendor/bin/sail bin duster lint --using=pint -v
+
+# or if you have a Sail alias setup...
+sail bin duster lint --using=pint -v
+```
+
 ### Stopping the development environment
 
 When you're done in the environment you can stop the containers using the command below.
