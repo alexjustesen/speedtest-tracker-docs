@@ -40,6 +40,7 @@
 * [Data Dictionary](other/data-dictionary.md)
 * [Embed Dashboard](other/embed-dashboard.md)
 * [Health Check](other/health-check.md)
+* [Stream Deck](other/stream-deck.md)
 
 ## 🖥 API
 
