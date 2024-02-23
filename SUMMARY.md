@@ -39,6 +39,7 @@
 * [Commands](other/commands.md)
 * [Data Dictionary](other/data-dictionary.md)
 * [Embed Dashboard](other/embed-dashboard.md)
+* [Health Check](other/health-check.md)
 
 ## 🖥 API
 
