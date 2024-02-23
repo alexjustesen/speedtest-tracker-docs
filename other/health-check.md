@@ -5,14 +5,16 @@ Using the health check URL you can test to make sure the application is up and w
 ### Health Check Endpoint
 
 ```bash
-curl {APP_URL}/api/healthcheck
+curl APP_URL/api/healthcheck
 ```
 
 You can also add this to your Docker Compose file so the Docker service can monitor that the container has started successfully.
 
-```docker
+```yaml
+version: '3.4'
+
 healthcheck:
-    test: curl -fSs {APP_URL}/api/healthcheck || exit 1
+    test: curl -fSs APP_URL/api/healthcheck || exit 1
     interval: 10s
     retries: 3
     start_period: 30s

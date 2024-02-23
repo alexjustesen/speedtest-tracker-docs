@@ -24,7 +24,7 @@
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
 
-## ⚙ Settings
+## ⚙️ Settings
 
 * [Data Integrations](settings/data-platforms/README.md)
   * [InfluxDB2](settings/data-platforms/influxdb2.md)
@@ -42,7 +42,7 @@
 * [Health Check](other/health-check.md)
 * [Stream Deck](other/stream-deck.md)
 
-## 🖥 API
+## 🖥️ API
 
 * [Getting Started](api/getting-started.md)
 * [Latest Result](api/latest-result.md)

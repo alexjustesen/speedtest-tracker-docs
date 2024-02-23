@@ -13,7 +13,7 @@ Setting up your environment with Docker Compose is the recommended infrastructur
 {% tabs %}
 {% tab title="Docker (MariaDB/MySQL)" %}
 ```yaml
-version: '3.3'
+version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -53,7 +53,7 @@ volumes:
 
 {% tab title="Docker (PostgreSQL)" %}
 ```yaml
-version: '3.3'
+version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
