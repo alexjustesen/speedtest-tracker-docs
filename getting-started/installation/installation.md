@@ -8,10 +8,31 @@ description: >-
 
 ### Install with Docker Compose (recommended)
 
-Setting up your environment with Docker Compose is the recommended infrastructure pattern as it'll setup the application and a database for you.
+Setting up your environment with Docker Compose is the recommended infrastructure pattern as it'll setup the application and a database for you. SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
 {% tabs %}
-{% tab title="Docker (MariaDB/MySQL)" %}
+{% tab title="SQLite" %}
+```yaml
+version: '3.4'
+services:
+    speedtest-tracker:
+        container_name: speedtest-tracker
+        ports:
+            - 8080:80
+            - 8443:443
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - DB_CONNECTION=sqlite
+        volumes:
+            - /path/to/data:/config
+            - /path/to/directory/web:/etc/ssl/web
+        image: lscr.io/linuxserver/speedtest-tracker:latest
+        restart: unless-stopped
+```
+{% endtab %}
+
+{% tab title="MariaDB/MySQL" %}
 ```yaml
 version: '3.4'
 services:
@@ -51,7 +72,7 @@ volumes:
 ```
 {% endtab %}
 
-{% tab title="Docker (PostgreSQL)" %}
+{% tab title="Postgres" %}
 ```yaml
 version: '3.4'
 services:
@@ -100,7 +121,21 @@ These instructions assume you have an appropriate database instance that already
 {% endhint %}
 
 {% tabs %}
-{% tab title="Docker (MariaDB/MySQL)" %}
+{% tab title="SQLite" %}
+```bash
+docker run -d --name speedtest-tracker --restart unless-stopped \
+    -p 8080:80 \
+    -p 8443:443 \
+    -e PUID=1000 \
+    -e PGID=1000 \
+    -e DB_CONNECTION=sqlite \
+    -v /path/to/data:/config \
+    -v /path/to/directory/web:/etc/ssl/web \
+    lscr.io/linuxserver/speedtest-tracker:latest
+```
+{% endtab %}
+
+{% tab title="MariaDB/MySQL" %}
 ```bash
 docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8080:80 \
@@ -119,7 +154,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
 ```
 {% endtab %}
 
-{% tab title="Docker (PostgreSQL)" %}
+{% tab title="Postgres" %}
 ```bash
 docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8080:80 \
