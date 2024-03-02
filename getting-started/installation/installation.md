@@ -26,7 +26,7 @@ services:
             - DB_CONNECTION=sqlite
         volumes:
             - /path/to/data:/config
-            - /path/to/directory/web:/etc/ssl/web
+            - /path/to-custom-ssl-keys:/config/keys:ro
         image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
 ```
@@ -52,7 +52,7 @@ services:
             - DB_PASSWORD=password
         volumes:
             - /path/to/data:/config
-            - /path/to/directory/web:/etc/ssl/web
+            - /path/to-custom-ssl-keys:/config/keys:ro
         image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
         depends_on:
@@ -92,7 +92,7 @@ services:
             - DB_PASSWORD=password
         volumes:
             - /path/to/data:/config
-            - /path/to/directory/web:/etc/ssl/web
+            - /path/to-custom-ssl-keys:/config/keys:ro
         image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
         depends_on:
@@ -130,7 +130,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e PGID=1000 \
     -e DB_CONNECTION=sqlite \
     -v /path/to/data:/config \
-    -v /path/to/directory/web:/etc/ssl/web \
+    -v /path/to-custom-ssl-keys:/config/keys:ro \
     lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
@@ -149,7 +149,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
     -v /path/to/data:/config \
-    -v /path/to/directory/web:/etc/ssl/web \
+    -v /path/to-custom-ssl-keys:/config/keys:ro \
     lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
@@ -168,7 +168,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
     -v /path/to/data:/config \
-    -v /path/to/directory/web:/etc/ssl/web \
+    -v /path/to-custom-ssl-keys:/config/keys:ro \
     lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
