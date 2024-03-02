@@ -10,6 +10,8 @@ description: >-
 
 Setting up your environment with Docker Compose is the recommended infrastructure pattern as it'll setup the application and a database for you. SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
+If you would like to provide your own SSL keys, they must be named `cert.crt` (full chain) and `cert.key` (private key), and mounted in the container folder `/config/keys`.
+
 {% tabs %}
 {% tab title="SQLite" %}
 ```yaml
