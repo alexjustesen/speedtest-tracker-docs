@@ -34,7 +34,7 @@ services:
       - DB_PASSWORD=password
     volumes:
       - /path/to-data:/config
-      - /path/to/directory/web:/etc/ssl/web
+      - /path/to-custom-ssl-keys:/config/keys:ro
     image: lscr.io/linuxserver/speedtest-tracker:latest
     networks:
       qnet-network:
