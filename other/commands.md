@@ -29,4 +29,4 @@ Application commands are built to extend Speedtest Tracker's functionality from 
 
 Maintenance commands help fix issues that might crop up over time.
 
-<table><thead><tr><th width="261">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>app:fix-result-statuses</code></td><td>Reviews the data payload of each result and corrects the status attribute based on Ookla's CLI response.</td></tr></tbody></table>
+<table><thead><tr><th width="261">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>app:fix-result-statuses</code></td><td>Reviews the data payload of each result and corrects the status attribute based on Ookla's CLI response.</td></tr><tr><td><code>app:update-general-settings</code></td><td>Use to update General Settings from the CLI in case of an application error on that page.</td></tr></tbody></table>
