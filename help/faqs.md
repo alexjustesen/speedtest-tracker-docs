@@ -66,6 +66,14 @@ If your database instance runs with a local time zone set it needs to **match** 
 
 <details>
 
+<summary>Cron schedule "from" a minute or hour</summary>
+
+Starting your cron schedule from a minute our hour can help avoid congestion on the network or a speedtest server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on the issue can help you get the formatting right.
+
+</details>
+
+<details>
+
 <summary>I'm getting a <code>500 | SERVER ERROR</code> error</summary>
 
 By default `APP_DEBUG` is set to `false` in production to prevent verbose error outputs. To debug the issue follow the steps below.
