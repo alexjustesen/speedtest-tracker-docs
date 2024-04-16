@@ -25,6 +25,27 @@ MAIL_FROM_ADDRESS="hello@example.com"
 MAIL_FROM_NAME="Speedtest Tracker"
 ```
 
+**GMAIL example:**
+
+Steps for creating an app password.
+- Go to your Google Account.
+- Select Security.
+- Under "How you sign in to Google," choose 2-Step Verification.
+- Click on App passwords.
+- Enter a name and generate a password.
+- Remember to copy the password before closing; otherwise, you'll need to create another one.
+
+```
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=username@gmail.com
+MAIL_PASSWORD="password"
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=username@gmail.com
+MAIL_FROM_NAME="Speedtest Tracker"
+```
+
 ### Triggers
 
 <table><thead><tr><th width="237">Name</th><th>Description</th></tr></thead><tbody><tr><td>On completed speedtest</td><td>On each successful speedtest a notification will be send to the application.</td></tr><tr><td>On absolute threshold failure</td><td>On any absolute threshold failure a notification will be send to the application.</td></tr></tbody></table>
