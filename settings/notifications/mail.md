@@ -28,7 +28,7 @@ MAIL_FROM_NAME="Speedtest Tracker"
 **GMAIL example:**
 
 Steps for creating an app password.
-- Go to your <a href="https://myaccount.google.com" title="Click here to access your Google Account">Google Account</a>
+- Go to your <a href="https://myaccount.google.com" title="Click here to access your Google Account" target="_blank">Google Account</a>
 .
 - Select Security.
 - Under "How you sign in to Google," choose 2-Step Verification.
