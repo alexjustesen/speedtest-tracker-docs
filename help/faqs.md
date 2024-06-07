@@ -10,12 +10,7 @@ description: A running list of frequently ask questions and their answers.
 
 <summary>I get a warning on container start up that the <code>APP_KEY</code> is missing</summary>
 
-As of `v0.12.0` the app key is generated on start-up and it is **OK to ignore this warning**. To set a persisted key follow the steps below
-
-1. Open the CLI of the Speedtest Docker container
-2. Run `php artisan key:generate --show`
-3. Add the generated string to your environment variables attached to `APP_KEY=generatedstringgoeshere`
-4. Restart the container
+You can generate a key here: [https://speedtest-tracker.dev](https://speedtest-tracker.dev).
 
 </details>
 
@@ -30,25 +25,14 @@ As of `v0.12.0` the app key is generated on start-up and it is **OK to ignore th
 
 </details>
 
-### Settings
-
-<details>
-
-<summary>Speedtest server</summary>
-
-#### Q: Why do only some servers have the server name in the list?
-
-By default Ookla's CLI only returns the "closest" 20 servers. If the server you've selected isn't in that list Speedtest Tracker can label it.
-
-</details>
-
 ### Time zones
 
 <details>
 
 <summary>How do I set the display and schedule time zone?</summary>
 
-Your local time can be set in the UI under `Settings -> General -> Time zone`.
+1. Set `DISPLAY_TIMEZONE` environment variables to your local timezone.
+2. Restart the container
 
 </details>
 
@@ -56,9 +40,9 @@ Your local time can be set in the UI under `Settings -> General -> Time zone`.
 
 <summary>My display timestamps or scheduled tests aren't correct.</summary>
 
-Speedtest Tracker assumes your application and database containers are set to `UTC` by default.
+Speedtest Tracker assumes your application and database containers are set to `UTC` by default. If your database instance has your local time zone set it needs to **match** that set in `APP_TIMEZONE` and `DISPLAY_TIMEZONE` environment variables.
 
-If your database instance runs with a local time zone set it needs to **match** that set in `Time zone` and `Database has time zone` needs to be enabled for the offset to be correctly displayed.
+Once set restart the container.
 
 </details>
 
