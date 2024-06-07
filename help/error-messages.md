@@ -1,6 +1,16 @@
 # Error Messages
 
-Ookla's CLI can throw some common error messages. Below is a list with an explanation of what it means.
+### Speedtest errors
+
+<details>
+
+<summary>Could not resolve host.</summary>
+
+This means the container can't reach the internet to run a speedtest successfully.
+
+</details>
+
+### Ookla errors
 
 <details>
 
