@@ -25,7 +25,10 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
+            - APP_KEY=
             - DB_CONNECTION=sqlite
+            - SPEEDTEST_SCHEDULE=
+            - SPEEDTEST_SERVERS=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -46,12 +49,15 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
+            - APP_KEY=
             - DB_CONNECTION=mysql
             - DB_HOST=db
             - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
+            - SPEEDTEST_SCHEDULE=
+            - SPEEDTEST_SERVERS=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -86,12 +92,15 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
+            - APP_KEY=
             - DB_CONNECTION=pgsql
             - DB_HOST=db
             - DB_PORT=5432
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
+            - SPEEDTEST_SCHEDULE=
+            - SPEEDTEST_SERVERS=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -130,7 +139,10 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
+    -e APP_KEY= \
     -e DB_CONNECTION=sqlite \
+    -e SPEEDTEST_SCHEDULE= \
+    -e SPEEDTEST_SERVERS= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
@@ -144,12 +156,15 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
+    -e APP_KEY= \
     -e DB_CONNECTION=mysql \
     -e DB_HOST= \
     -e DB_PORT=3306 \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
+    -e SPEEDTEST_SCHEDULE= \
+    -e SPEEDTEST_SERVERS= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
@@ -163,12 +178,15 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
+    -e APP_KEY \
     -e DB_CONNECTION=pgsql \
     -e DB_HOST= \
     -e DB_PORT=5432 \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
+    -e SPEEDTEST_SCHEDULE= \
+    -e SPEEDTEST_SERVERS= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
