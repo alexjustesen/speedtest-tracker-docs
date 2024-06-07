@@ -26,12 +26,15 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - APP_KEY=
       - DB_CONNECTION=mysql
       - DB_HOST=192.168.1.4
       - DB_PORT=3306
       - DB_DATABASE=speedtest_tracker
       - DB_USERNAME=speedy
       - DB_PASSWORD=password
+      - SPEEDTEST_SCHEDULE=
+      - SPEEDTEST_SERVERS=
     volumes:
       - /path/to-data:/config
       - /path/to-custom-ssl-keys:/config/keys
