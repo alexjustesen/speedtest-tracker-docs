@@ -17,6 +17,9 @@ services:
             - PUID=1000
             - PGID=1000
             - DB_CONNECTION=sqlite
+            - APP_KEY=
+            - SPEEDTEST_SCHEDULE=
+            - SPEEDTEST_SERVERS=
             - APP_URL=speedtest.yourdomain.com
         volumes:
             - /path/to/data:/config
