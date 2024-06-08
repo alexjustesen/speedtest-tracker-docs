@@ -12,5 +12,5 @@ description: >-
 
 ### Speedtest
 
-<table><thead><tr><th width="226">Name</th><th>Description</th></tr></thead><tbody><tr><td><code>SPEEDTEST</code><br><code>_SCHEDULE</code></td><td>Cron expression used to run speedtests on a scheduled basis.</td></tr><tr><td><code>SPEEDTEST</code><br><code>_SERVERS</code></td><td>Comma separated list of servers to randomly use for speedtests.</td></tr><tr><td><code>PRUNE_RESULTS</code><br><code>_OLDER_THAN</code></td><td>Set the value to greated than zero to prune stored results. This value should be represented in days.</td></tr></tbody></table>
+<table><thead><tr><th width="226">Name</th><th>Description</th></tr></thead><tbody><tr><td><code>SPEEDTEST</code><br><code>_PING_URL</code></td><td>IP address or URL used to check for an internet connection prior to running a test.</td></tr><tr><td><code>SPEEDTEST</code><br><code>_SCHEDULE</code></td><td>Cron expression used to run speedtests on a scheduled basis.</td></tr><tr><td><code>SPEEDTEST</code><br><code>_SERVERS</code></td><td>Comma separated list of servers to randomly use for speedtests.</td></tr><tr><td><code>PRUNE_RESULTS</code><br><code>_OLDER_THAN</code></td><td>Set the value to greated than zero to prune stored results. This value should be represented in days.</td></tr></tbody></table>
 
