@@ -1,8 +1,10 @@
 ---
-description: Setup for when using Traefik as a Reserve Proxy 
+description: Setup for when using a Reserve Proxy 
 ---
 
-# Traefik Proxy
+# Proxies
+
+## Traefik
 
 Traefik can be used as a Reverse Proxy in front of Speedtest Tracker when you want to expose the Dashboard publicly with a trusted certificate. You will need at add the `APP_URL` envoirment and needed labels to the docker compose have treafik apply the certificate and routing.
 
