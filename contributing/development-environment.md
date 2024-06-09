@@ -100,7 +100,19 @@ As well need to make the needed tables etc in the database.
 sail artisan migrate:fresh --force
 ```
 
-#### 7. Installing the application
+#### 7. Installing NPM assets
+
+We will need to install the needed NPM assets 
+
+```bash
+./vendor/bin/sail npm install && ./vendor/bin/sail npm run build
+
+# or if you have a Sail alias setup...
+sail npm install && sail npm run build
+
+``` 
+
+#### 8. Installing the application
 
 Once the environment is setup you can install a fresh version of the application by running the following command. Keep in mind this WILL refresh the entire database.
 
