@@ -12,6 +12,11 @@ Setting up your environment with Docker Compose is the recommended infrastructur
 
 If you would like to provide your own SSL keys, they must be named `cert.crt` (full chain) and `cert.key` (private key), and mounted in the container folder `/config/keys`.
 
+{% hint style="info" %}
+Complete overview of the Environment Variables can be found here
+[environment-variables.md](environment-variables.md "mention").
+{% endhint %}
+
 {% tabs %}
 {% tab title="SQLite" %}
 ```yaml
@@ -29,6 +34,10 @@ services:
             - DB_CONNECTION=sqlite
             - SPEEDTEST_SCHEDULE=
             - SPEEDTEST_SERVERS=
+            - PRUNE_RESULTS_OLDER_THAN=
+            - CHART_DATETIME_FORMAT= 
+            - DATETIME_FORMAT=
+            - APP_TIMEZONE=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -58,6 +67,10 @@ services:
             - DB_PASSWORD=password
             - SPEEDTEST_SCHEDULE=
             - SPEEDTEST_SERVERS=
+            - PRUNE_RESULTS_OLDER_THAN=
+            - CHART_DATETIME_FORMAT= 
+            - DATETIME_FORMAT=
+            - APP_TIMEZONE=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -101,6 +114,10 @@ services:
             - DB_PASSWORD=password
             - SPEEDTEST_SCHEDULE=
             - SPEEDTEST_SERVERS=
+            - PRUNE_RESULTS_OLDER_THAN=
+            - CHART_DATETIME_FORMAT= 
+            - DATETIME_FORMAT=
+            - APP_TIMEZONE=
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -143,6 +160,10 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_CONNECTION=sqlite \
     -e SPEEDTEST_SCHEDULE= \
     -e SPEEDTEST_SERVERS= \
+    -e PRUNE_RESULTS_OLDER_THAN= \
+    -e CHART_DATETIME_FORMAT= \
+    -e DATETIME_FORMAT= \
+    -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
@@ -187,6 +208,10 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e DB_PASSWORD= \
     -e SPEEDTEST_SCHEDULE= \
     -e SPEEDTEST_SERVERS= \
+    -e PRUNE_RESULTS_OLDER_THAN= \
+    -e CHART_DATETIME_FORMAT= \
+    -e DATETIME_FORMAT= \
+    -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest

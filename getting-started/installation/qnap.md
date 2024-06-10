@@ -35,6 +35,10 @@ services:
       - DB_PASSWORD=password
       - SPEEDTEST_SCHEDULE=
       - SPEEDTEST_SERVERS=
+      - PRUNE_RESULTS_OLDER_THAN=
+      - CHART_DATETIME_FORMAT= 
+      - DATETIME_FORMAT=
+      - APP_TIMEZONE=
     volumes:
       - /path/to-data:/config
       - /path/to-custom-ssl-keys:/config/keys
