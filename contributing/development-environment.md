@@ -35,16 +35,18 @@ Next we need to make a copy of `.env.example`, the environment file is what Lara
 cp .env.example .env
 ```
 
-You'll also want to fill in a few `DB_` variables here as well which will control which database Laravel will use. I've included MySQL as the default database for the development environment.
+You will copy and fill in the following Environment Variables
 
 ```
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=speedtest_tracker
-DB_USERNAME=sail
-DB_PASSWORD=password
+APP_NAME="Speedtest Tracker"
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=false
+APP_TIMEZONE=UTC
 ```
+{% hint style="info" %}
+Generate the APP_KEY at https://speedtest-tracker.dev
+{% endhint %}
 
 #### 3. Install Composer dependencies
 
@@ -55,7 +57,7 @@ docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v "$(pwd):/var/www/html" \
     -w /var/www/html \
-    laravelsail/php82-composer:latest \
+    laravelsail/php83-composer:latest \
     composer install --ignore-platform-reqs
 ```
 
@@ -81,7 +83,36 @@ To start up the environment we can now use the Sail binary that is included with
 sail up -d
 ```
 
-#### 6. Installing the application
+#### 6. Create the database 
+
+To start up the environment we need to make a database
+
+```bash
+touch database/database.sqlite
+```
+
+As well need to make the needed tables etc in the database.
+
+```bash
+./vendor/bin/sail artisan migrate:fresh --force
+
+# or if you have a Sail alias setup...
+sail artisan migrate:fresh --force
+```
+
+#### 7. Installing NPM assets
+
+We will need to install the needed NPM assets 
+
+```bash
+./vendor/bin/sail npm install && ./vendor/bin/sail npm run build
+
+# or if you have a Sail alias setup...
+sail npm install && sail npm run build
+
+``` 
+
+#### 8. Installing the application
 
 Once the environment is setup you can install a fresh version of the application by running the following command. Keep in mind this WILL refresh the entire database.
 
