@@ -44,8 +44,9 @@ APP_KEY=
 APP_DEBUG=false
 APP_TIMEZONE=UTC
 ```
+
 {% hint style="info" %}
-Generate the APP_KEY at https://speedtest-tracker.dev
+Generate the APP\_KEY at https://speedtest-tracker.dev
 {% endhint %}
 
 #### 3. Install Composer dependencies
@@ -83,7 +84,7 @@ To start up the environment we can now use the Sail binary that is included with
 sail up -d
 ```
 
-#### 6. Create the database 
+#### 6. Create the database
 
 To start up the environment we need to make a database
 
@@ -102,7 +103,7 @@ sail artisan migrate:fresh --force
 
 #### 7. Installing NPM assets
 
-We will need to install the needed NPM assets 
+We will need to install the needed NPM assets
 
 ```bash
 ./vendor/bin/sail npm install && ./vendor/bin/sail npm run build
@@ -110,22 +111,20 @@ We will need to install the needed NPM assets
 # or if you have a Sail alias setup...
 sail npm install && sail npm run build
 
-``` 
-
-#### 8. Installing the application
-
-Once the environment is setup you can install a fresh version of the application by running the following command. Keep in mind this WILL refresh the entire database.
-
-```bash
-./vendor/bin/sail artisan app:install --force
-
-# or if you have a Sail alias setup...
-sail artisan app:install --force
 ```
 
-{% hint style="info" %}
-You can reset your development environment at any time by running the `app:install` command.
-{% endhint %}
+***
+
+### Reset your development environment
+
+You can reset your development environment at any time by re-running a fresh migration:
+
+```bash
+./vendor/bin/sail artisan migrate:fresh --force
+
+# or if you have a Sail alias setup...
+sail artisan migrate:fresh --force
+```
 
 ***
 
@@ -144,7 +143,7 @@ sail artisan queue:work
 
 ### Lint your code before opening a PR or committing changes
 
-To keep PHP's code style consistant across multiple contributors a successful lint workflow is required to pass. Check your code quality locally by running the commnand below and fixing it's recommendations.
+To keep PHP's code style consistent across multiple contributors a successful lint workflow is required to pass. Check your code quality locally by running the command below and fixing it's recommendations.
 
 ```bash
 ./vendor/bin/sail bin duster lint --using=pint -v
