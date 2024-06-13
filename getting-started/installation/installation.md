@@ -23,7 +23,6 @@ A full list of released versions can be found [here](https://fleet.linuxserver.i
 {% tabs %}
 {% tab title="SQLite" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -51,7 +50,6 @@ services:
 
 {% tab title="MariaDB/MySQL" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -98,7 +96,6 @@ volumes:
 
 {% tab title="Postgres" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker

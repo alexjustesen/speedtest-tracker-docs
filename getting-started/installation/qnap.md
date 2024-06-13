@@ -20,7 +20,6 @@ A full list of released versions can be found [here](https://fleet.linuxserver.i
 {% endhint %}
 
 ```yaml
-version: '3.4'
 services:
   speedtest-tracker:
     container_name: speedtest-tracker
