@@ -13,14 +13,16 @@ Setting up your environment with Docker Compose is the recommended infrastructur
 If you would like to provide your own SSL keys, they must be named `cert.crt` (full chain) and `cert.key` (private key), and mounted in the container folder `/config/keys`.
 
 {% hint style="info" %}
-Complete overview of the Environment Variables can be found here
-[environment-variables.md](environment-variables.md "mention").
+Complete overview of the Environment Variables can be found [here](../environment-variables.md)&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+A full list of released versions can be found [here](https://fleet.linuxserver.io/image?name=linuxserver/speedtest-tracker)
 {% endhint %}
 
 {% tabs %}
 {% tab title="SQLite" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -41,14 +43,13 @@ services:
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
-        image: lscr.io/linuxserver/speedtest-tracker:latest
+        image: lscr.io/linuxserver/speedtest-tracker:0.20.6
         restart: unless-stopped
 ```
 {% endtab %}
 
 {% tab title="MariaDB/MySQL" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -95,7 +96,6 @@ volumes:
 
 {% tab title="Postgres" %}
 ```yaml
-version: '3.4'
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -148,6 +148,10 @@ volumes:
 These instructions assume you have an appropriate database instance that already exists.
 {% endhint %}
 
+{% hint style="info" %}
+A full list of released versions can be found [here](https://fleet.linuxserver.io/image?name=linuxserver/speedtest-tracker)
+{% endhint %}
+
 {% tabs %}
 {% tab title="SQLite" %}
 ```bash
@@ -166,7 +170,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:latest
+    lscr.io/linuxserver/speedtest-tracker:0.20.6
 ```
 {% endtab %}
 
@@ -188,12 +192,13 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e SPEEDTEST_SERVERS= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:latest
+    lscr.io/linuxserver/speedtest-tracker:0.20.6
 ```
 {% endtab %}
 
 {% tab title="Postgres" %}
 ```bash
+
 docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8080:80 \
     -p 8443:443 \
@@ -214,7 +219,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:latest
+    lscr.io/linuxserver/speedtest-tracker:0.20.6
 ```
 {% endtab %}
 {% endtabs %}
+

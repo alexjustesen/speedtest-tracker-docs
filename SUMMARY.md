@@ -42,6 +42,8 @@
 * [Embed Dashboard](other/embed-dashboard.md)
 * [Health Check](other/health-check.md)
 * [Stream Deck](other/stream-deck.md)
+* [Proxies](other/proxies.md)
+
 
 ## 🖥️ API
 

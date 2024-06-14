@@ -15,8 +15,11 @@ These instructions will run you through setting up the application on a QNAP NAS
 
 ### Example Docker Compose
 
+{% hint style="info" %}
+A full list of released versions can be found [here](https://fleet.linuxserver.io/image?name=linuxserver/speedtest-tracker)
+{% endhint %}
+
 ```yaml
-version: '3.4'
 services:
   speedtest-tracker:
     container_name: speedtest-tracker
@@ -42,7 +45,7 @@ services:
     volumes:
       - /path/to-data:/config
       - /path/to-custom-ssl-keys:/config/keys
-    image: lscr.io/linuxserver/speedtest-tracker:latest
+    image: lscr.io/linuxserver/speedtest-tracker:0.20.6
     networks:
       qnet-network:
         ipv4_address: 192.168.1.3

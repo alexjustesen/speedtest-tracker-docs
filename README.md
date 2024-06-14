@@ -10,7 +10,7 @@ description: >-
 Docs are up to date through version: `0.20.x`
 {% endhint %}
 
-<figure><img src=".gitbook/assets/dashboard_screenshot.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>V0.20.6 Dashboard</p></figcaption></figure>
 
 ### Introduction
 
