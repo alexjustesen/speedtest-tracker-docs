@@ -36,6 +36,7 @@
 
 ## 👀 Other
 
+* [Community Projects](other/community-projects.md)
 * [Caching](other/caching.md)
 * [Commands](other/commands.md)
 * [Data Dictionary](other/data-dictionary.md)
