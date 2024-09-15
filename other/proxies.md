@@ -36,7 +36,7 @@ services:
             - "traefik.http.routers.speedtest-tracker.tls=true"
             - "traefik.http.routers.speedtest-tracker.tls.certresolver=yourresolver"
             - "traefik.http.services.speedtest-tracker.loadbalancer.server.port=80"
-        image: lscr.io/linuxserver/speedtest-tracker:0.20.6
+        image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
 ```
 
