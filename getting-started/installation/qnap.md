@@ -46,7 +46,7 @@ services:
     volumes:
       - /path/to-data:/config
       - /path/to-custom-ssl-keys:/config/keys
-    image: lscr.io/linuxserver/speedtest-tracker:0.20.6
+    image: lscr.io/linuxserver/speedtest-tracker:latest
     networks:
       qnet-network:
         ipv4_address: 192.168.1.3

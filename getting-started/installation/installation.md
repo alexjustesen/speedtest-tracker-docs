@@ -43,7 +43,7 @@ services:
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
-        image: lscr.io/linuxserver/speedtest-tracker:0.20.6
+        image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
 ```
 {% endtab %}
@@ -170,7 +170,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:0.20.6
+    lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
 
@@ -192,7 +192,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e SPEEDTEST_SERVERS= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:0.20.6
+    lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
 
@@ -219,7 +219,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e APP_TIMEZONE= \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
-    lscr.io/linuxserver/speedtest-tracker:0.20.6
+    lscr.io/linuxserver/speedtest-tracker:latest
 ```
 {% endtab %}
 {% endtabs %}
