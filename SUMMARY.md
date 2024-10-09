@@ -36,15 +36,16 @@
 
 ## 👀 Other
 
-* [Community Projects](other/community-projects.md)
+* [Proxies](other/proxies/README.md)
+  * [Cloudflare Tunnel (Zero Trust)](other/proxies/cloudflare-tunnel-zero-trust.md)
+  * [Traefik](other/proxies/traefik.md)
 * [Caching](other/caching.md)
 * [Commands](other/commands.md)
 * [Data Dictionary](other/data-dictionary.md)
 * [Embed Dashboard](other/embed-dashboard.md)
 * [Health Check](other/health-check.md)
+* [Community Projects](other/community-projects.md)
 * [Stream Deck](other/stream-deck.md)
-* [Proxies](other/proxies.md)
-
 
 ## 🖥️ API
 
