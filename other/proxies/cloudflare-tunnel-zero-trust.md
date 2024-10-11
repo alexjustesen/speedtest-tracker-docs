@@ -50,7 +50,7 @@ services:
 ```
 
 {% hint style="info" %}
-Depending on your Cloudflare Tunnel configuration, you need to make use the Speedtest Tracker and Cloudflare Tunnel are on the same docker network.
+Depending on your Cloudflare Tunnel configuration, you need to make sure the Speedtest Tracker and Cloudflare Tunnel are on the same docker network.
 {% endhint %}
 
 <table><thead><tr><th width="291">Added compose part</th><th>Description</th></tr></thead><tbody><tr><td><code>APP_URL</code></td><td>URL you want to access the WebGui on.</td></tr><tr><td><code>ASSET_URL</code></td><td>URL used for loading all the needed assets. Need to be the same as the <code>APP_URL</code>.</td></tr></tbody></table>
