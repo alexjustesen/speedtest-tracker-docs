@@ -8,7 +8,7 @@
 * For the tunnel you want to add the Speedtest Tracker to. Click on **Edit**
 * Go to **Public Hostname**
 * Click on **Add a public hostname**
-* Fill in the fields the following field&#x20;
+* Fill in the fields the following field
   * **Subdomain:** The subdomain you want to access the Speedtest Tracker on.
   * **Domain:** The domain you want to access the Speedtest Tracker on.
   * **Type:** Connection type to the Speedtest Tracker (http/https)
@@ -21,8 +21,6 @@ When using the container\_name Cloudflare Tunnel and Speedtest Tracker need to b
 
 <figure><img src="../../.gitbook/assets/cf-tunnel.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Docker Configuration
 
 Docker-Compose:
@@ -34,12 +32,16 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - DB_CONNECTION=sqlite
             - APP_KEY=
-            - ASSET_URL=
+            - DB_CONNECTION=sqlite
             - SPEEDTEST_SCHEDULE=
             - SPEEDTEST_SERVERS=
+            - PRUNE_RESULTS_OLDER_THAN=
+            - CHART_DATETIME_FORMAT= 
+            - DATETIME_FORMAT=
+            - APP_TIMEZONE=
             - APP_URL=speedtest.yourdomain.com # Change this to your domain name
+            - ASSET_URL=speedtest.yourdomain.com # Change this to your domain name
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -48,7 +50,7 @@ services:
 ```
 
 {% hint style="info" %}
-Depending on your Cloudflare Tunnel configuration, you need to make use the Speedtest Tracker and Cloudflare Tunnel  are on the same docker network.
+Depending on your Cloudflare Tunnel configuration, you need to make use the Speedtest Tracker and Cloudflare Tunnel are on the same docker network.
 {% endhint %}
 
 <table><thead><tr><th width="291">Added compose part</th><th>Description</th></tr></thead><tbody><tr><td><code>APP_URL</code></td><td>URL you want to access the WebGui on.</td></tr><tr><td><code>ASSET_URL</code></td><td>URL used for loading all the needed assets. Need to be the same as the <code>APP_URL</code>.</td></tr></tbody></table>
