@@ -39,6 +39,7 @@
 * [Proxies](other/proxies/README.md)
   * [Cloudflare Tunnel (Zero Trust)](other/proxies/cloudflare-tunnel-zero-trust.md)
   * [Traefik](other/proxies/traefik.md)
+  * [Tailscale](other/proxies/tailscale.md)
 * [Caching](other/caching.md)
 * [Commands](other/commands.md)
 * [Data Dictionary](other/data-dictionary.md)
