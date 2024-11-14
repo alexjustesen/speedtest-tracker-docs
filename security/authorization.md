@@ -33,4 +33,4 @@ Role based authorization introduced in `v0.12.0-beta.6`
 
 ### Settings
 
-<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>General</td><td>false</td><td>true</td></tr><tr><td>Data integrations</td><td>false</td><td>true</td></tr><tr><td>Notifications</td><td>false</td><td>true</td></tr><tr><td>Thresholds</td><td>false</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>Data integrations</td><td>false</td><td>true</td></tr><tr><td>Notifications</td><td>false</td><td>true</td></tr><tr><td>Thresholds</td><td>false</td><td>true</td></tr></tbody></table>
