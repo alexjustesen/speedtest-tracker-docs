@@ -1,24 +1,25 @@
 ---
 description: >-
-  A Docker image to check your internet speed using Ookla's Speedtest service.
-  Build using Laravel and the Speedtest CLI.
+  Speedtest Tracker is a self-hosted application that monitors the performance
+  and uptime of your internet connection. Build using Laravel and Speedtest CLI
+  from Ookla®, deployable with Docker.
 ---
 
 # Introduction
 
 {% hint style="info" %}
-Docs are up to date through version: `0.21.x`
+Docs are up to date through version: `0.22.x`
 {% endhint %}
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>V0.20.6 Dashboard</p></figcaption></figure>
 
 ### Introduction
 
-Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.
+Speedtest Tracker is a self-hosted application that monitors the performance and uptime of your internet connection.
 
 #### Why might I want this?
 
-The main use case for Speedtest Tracker is to build a history of your internet's performance so that you can be informed when you're not receiving your ISP's advertised rates.
+The main use case for Speedtest Tracker is to build a history of your internet performance and ISP's uptime so you can be informed when you're not receiving your ISP's advertised rates.
 
 _...also some of us just like a lot of data._
 
