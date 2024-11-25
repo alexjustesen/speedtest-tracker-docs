@@ -50,6 +50,16 @@ Once set restart the container.
 
 <details>
 
+<summary>AdGuard &#x26; Pi-hole allow domains</summary>
+
+When a speedtest is being processed Speedtest Tracker will make a call to [http://icanhazip.com](http://icanhazip.com) to get your external IP address. This is done to determine if your server has access to the internet and to check if your external IP address (WAN IP) should be skipped.
+
+Some blocks lists will block this domain, if you're getting errors and your server has access to the internet you'll need to add this to your allow lists.
+
+</details>
+
+<details>
+
 <summary>Cron schedule "from" a minute or hour</summary>
 
 Starting your cron schedule from a minute our hour can help avoid congestion on the network or a speedtest server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on the issue can help you get the formatting right.
