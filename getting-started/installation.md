@@ -8,15 +8,13 @@ description: >-
 
 These steps will run you through setting up the application using Docker and Docker Compose.
 
-### Install with Docker&#x20;
+### Install with Docker
+
+#### Docker Compose
 
 Setting up your environment with Docker Compose is the recommended way as it'll setup the application and a database for you. SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
 If you would like to provide your own SSL keys, they must be named `cert.crt` (full chain) and `cert.key` (private key), and mounted in the container folder `/config/keys`.
-
-{% hint style="info" %}
-Complete overview of the Environment Variables can be found [here](environment-variables.md)
-{% endhint %}
 
 {% tabs %}
 {% tab title="SQLite" %}
@@ -49,6 +47,8 @@ services:
 ```yaml
 services:
     speedtest-tracker:
+        image: lscr.io/linuxserver/speedtest-tracker:latest
+        restart: unless-stopped
         container_name: speedtest-tracker
         ports:
             - 8080:80
@@ -72,8 +72,6 @@ services:
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
-        image: lscr.io/linuxserver/speedtest-tracker:latest
-        restart: unless-stopped
         depends_on:
             - db
     db:
@@ -95,6 +93,8 @@ volumes:
 ```yaml
 services:
     speedtest-tracker:
+        image: lscr.io/linuxserver/speedtest-tracker:latest
+        restart: unless-stopped
         container_name: speedtest-tracker
         ports:
             - 8080:80
@@ -118,8 +118,6 @@ services:
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
-        image: lscr.io/linuxserver/speedtest-tracker:latest
-        restart: unless-stopped
         depends_on:
             - db
     db:
@@ -137,7 +135,21 @@ volumes:
 {% endtab %}
 {% endtabs %}
 
-The following environment variables need to be set: `APP_TIMEZONE`, `DATETIME_FORMAT`, and `APP_KEY`. Instructions on how to set them can be found [here](environment-variables.md).
+#### Setting Environment Variables
+
+In order for the application to run smoothly, some environment variables need to be test. &#x20;
+
+<table><thead><tr><th width="218">Name</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td><code>APP_KEY</code></td><td><p>Key used to encrypt and decrypt data.</p><p>You can generate a key at <a href="https://speedtest-tracker.dev">https://speedtest-tracker.dev</a>.</p></td><td><code>base64:ZoOYTjS+LBwFtud8SArwhiw8V4Qi9J+MPiT7z8XjfMo=</code><br>(DONT USE THIS EXAMPLE)</td></tr><tr><td><code>APP_TIMEZONE</code></td><td>Application timezone should be set if your database does not use UTC as its default timezone.</td><td><code>Europe/London</code></td></tr><tr><td><code>DISPLAY_TIMEZONE</code></td><td>Display timestamps in your local time.</td><td><code>Europe/London</code></td></tr></tbody></table>
+
+
+
+
+
+Optionally you can set a schedule for automatic speedtest. Check out the tips for the best schedule [here](../help/faqs.md#cron-schedule-from-a-minute-or-hour).&#x20;
+
+{% hint style="info" %}
+Complete overview of the Environment Variables for custom configuration can be found [here](environment-variables.md)
+{% endhint %}
 
 ### Install with Kubernetes
 

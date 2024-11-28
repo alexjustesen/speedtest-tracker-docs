@@ -6,9 +6,9 @@
 
 ## 🚀 Getting Started
 
-* [Database Drivers](getting-started/database-drivers.md)
-* [Environment Variables](getting-started/environment-variables.md)
 * [Installation](getting-started/installation.md)
+* [Environment Variables](getting-started/environment-variables.md)
+* [Database Drivers](getting-started/database-drivers.md)
 
 ## 🆘 Help
 
