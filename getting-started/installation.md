@@ -149,6 +149,12 @@ Optionally you can set variables to have automatic speedtest on an schedule. Che
 {% endstep %}
 
 {% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
 #### Start the Container
 
 You can now start the container comform the platform you are on.&#x20;
@@ -157,7 +163,7 @@ You can now start the container comform the platform you are on.&#x20;
 {% step %}
 #### First Login
 
-During the start the container there is an defualt username and password create. Use the [default login](../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../security/authentication.md#change-user-account) after logging in.&#x20;
+During the start the container there is an default  username and password created. Use the [default login](../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../security/authentication.md#change-user-account) after logging in.&#x20;
 {% endstep %}
 {% endstepper %}
 
