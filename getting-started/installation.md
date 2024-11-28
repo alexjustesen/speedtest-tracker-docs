@@ -6,15 +6,19 @@ description: >-
 
 # Installation
 
-These steps will run you through setting up the application using Docker and Docker Compose.
+Setting up your environment with Docker Compose is the recommended way as it'll setup the application and a database for you.  These steps will run you through setting up the application using Docker and Docker Compose.
 
 ### Install with Docker
 
-#### Docker Compose
+{% stepper %}
+{% step %}
+### Docker Compose
 
-Setting up your environment with Docker Compose is the recommended way as it'll setup the application and a database for you. SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
+SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
+{% hint style="info" %}
 If you would like to provide your own SSL keys, they must be named `cert.crt` (full chain) and `cert.key` (private key), and mounted in the container folder `/config/keys`.
+{% endhint %}
 
 {% tabs %}
 {% tab title="SQLite" %}
@@ -30,12 +34,12 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - APP_KEY=
             - DB_CONNECTION=sqlite
-            - SPEEDTEST_SCHEDULE= # Optional
-            - SPEEDTEST_SERVERS= # Optional
+            - APP_KEY=
             - DATETIME_FORMAT=
             - APP_TIMEZONE=
+            - SPEEDTEST_SCHEDULE= # Optional
+            - SPEEDTEST_SERVERS= # Optional
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -56,19 +60,17 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - APP_KEY=
             - DB_CONNECTION=mysql
             - DB_HOST=db
             - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
-            - SPEEDTEST_SCHEDULE=
-            - SPEEDTEST_SERVERS=
-            - PRUNE_RESULTS_OLDER_THAN=
-            - CHART_DATETIME_FORMAT= 
+            - APP_KEY=
             - DATETIME_FORMAT=
             - APP_TIMEZONE=
+            - SPEEDTEST_SCHEDULE= # Optional
+            - SPEEDTEST_SERVERS= # Optional
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -102,19 +104,17 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - APP_KEY=
             - DB_CONNECTION=pgsql
             - DB_HOST=db
-            - DB_PORT=5432
+            - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
-            - SPEEDTEST_SCHEDULE=
-            - SPEEDTEST_SERVERS=
-            - PRUNE_RESULTS_OLDER_THAN=
-            - CHART_DATETIME_FORMAT= 
+            - APP_KEY=
             - DATETIME_FORMAT=
             - APP_TIMEZONE=
+            - SPEEDTEST_SCHEDULE= # Optional
+            - SPEEDTEST_SERVERS= # Optional
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
@@ -134,18 +134,32 @@ volumes:
 ```
 {% endtab %}
 {% endtabs %}
+{% endstep %}
 
-#### Setting Environment Variables
+{% step %}
+#### Environment Variables
 
-In order for the application to run smoothly, some environment variables need to be test. &#x20;
+In order for the application to run smoothly, some environment variables need to be test.  Check out the [Environment Variables](environment-variables.md) section. Make sure you set all the **Required** variables.
+{% endstep %}
 
-<table><thead><tr><th width="218">Name</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td><code>APP_KEY</code></td><td><p>Key used to encrypt and decrypt data.</p><p>You can generate a key at <a href="https://speedtest-tracker.dev">https://speedtest-tracker.dev</a>.</p></td><td><code>base64:ZoOYTjS+LBwFtud8SArwhiw8V4Qi9J+MPiT7z8XjfMo=</code><br>(DONT USE THIS EXAMPLE)</td></tr><tr><td><code>APP_TIMEZONE</code></td><td>Application timezone should be set if your database does not use UTC as its default timezone.</td><td><code>Europe/London</code></td></tr><tr><td><code>DISPLAY_TIMEZONE</code></td><td>Display timestamps in your local time.</td><td><code>Europe/London</code></td></tr></tbody></table>
+{% step %}
+### Speedtest Variables
 
+Optionally you can set variables to have automatic speedtest on an schedule. Check out the [Environment Variables](environment-variables.md#speedtest) section on how to set the variables. As well see the [FAQ](../help/faqs.md#speedtest) for tips on the best schedule&#x20;
+{% endstep %}
 
+{% step %}
+### Start the Container
 
+You can now start the container comform the platform you are on.&#x20;
+{% endstep %}
 
+{% step %}
+### First Login
 
-Optionally you can set a schedule for automatic speedtest. Check out the tips for the best schedule [here](../help/faqs.md#cron-schedule-from-a-minute-or-hour).&#x20;
+During the start the container there is an defualt username and password create. Use the default log credentials to login to the application. You can change the default after logging in.&#x20;
+{% endstep %}
+{% endstepper %}
 
 {% hint style="info" %}
 Complete overview of the Environment Variables for custom configuration can be found [here](environment-variables.md)

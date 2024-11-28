@@ -7,7 +7,6 @@
 ## 🚀 Getting Started
 
 * [Installation](getting-started/installation.md)
-* [Copy of Installation](getting-started/installation-1.md)
 * [Environment Variables](getting-started/environment-variables.md)
 * [Database Drivers](getting-started/database-drivers.md)
 
