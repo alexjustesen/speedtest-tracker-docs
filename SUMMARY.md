@@ -8,6 +8,7 @@
 
 * [Database Drivers](getting-started/database-drivers.md)
 * [Environment Variables](getting-started/environment-variables.md)
+* [Installation](getting-started/installation.md)
 
 ## 🆘 Help
 
