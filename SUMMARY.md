@@ -6,12 +6,6 @@
 
 ## 🚀 Getting Started
 
-* [Installation](getting-started/installation/README.md)
-  * [Using Docker or Docker Compose](getting-started/installation/installation.md)
-  * [Using Kubernetes](getting-started/installation/kubernetes.md)
-  * [Using QNAP](getting-started/installation/qnap.md)
-  * [Using Synology](getting-started/installation/synology.md)
-  * [Using Unraid](getting-started/installation/unraid.md)
 * [Database Drivers](getting-started/database-drivers.md)
 * [Environment Variables](getting-started/environment-variables.md)
 
@@ -62,5 +56,5 @@
 * [Source Code](https://github.com/alexjustesen/speedtest-tracker)
 * [Releases](https://github.com/alexjustesen/speedtest-tracker/releases)
 * [Update the Docs](https://github.com/alexjustesen/speedtest-tracker-docs)
-* [About Me](https://alexjustesen.com/?utm\_campaign=oss-projects\&utm\_source=speedtest-tracker-docs\&utm\_medium=textlink)
+* [About Me](https://alexjustesen.com/?utm_campaign=oss-projects\&utm_source=speedtest-tracker-docs\&utm_medium=textlink)
 * [Donate](https://github.com/sponsors/alexjustesen)
