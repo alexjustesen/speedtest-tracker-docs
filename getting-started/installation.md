@@ -12,7 +12,7 @@ Setting up your environment with Docker Compose is the recommended way as it'll 
 
 {% stepper %}
 {% step %}
-### Docker Compose
+#### Docker Compose
 
 SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
@@ -143,19 +143,19 @@ In order for the application to run smoothly, some environment variables need to
 {% endstep %}
 
 {% step %}
-### Speedtest Variables
+#### Speedtest Variables
 
 Optionally you can set variables to have automatic speedtest on an schedule. Check out the [Environment Variables](environment-variables.md#speedtest) section on how to set the variables. As well see the [FAQ](../help/faqs.md#speedtest) for tips on the best schedule&#x20;
 {% endstep %}
 
 {% step %}
-### Start the Container
+#### Start the Container
 
 You can now start the container comform the platform you are on.&#x20;
 {% endstep %}
 
 {% step %}
-### First Login
+#### First Login
 
 During the start the container there is an defualt username and password create. Use the [default login](../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../security/authentication.md#change-user-account) after logging in.&#x20;
 {% endstep %}
