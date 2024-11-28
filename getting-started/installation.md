@@ -149,12 +149,6 @@ Optionally you can set variables to have automatic speedtest on an schedule. Che
 {% endstep %}
 
 {% step %}
-###
-
-
-{% endstep %}
-
-{% step %}
 #### Start the Container
 
 You can now start the container comform the platform you are on.&#x20;
