@@ -6,10 +6,25 @@ Speedtest Tracker uses Filament for the admin panel. During the install process 
 
 ### Default User Account
 
-{% hint style="info" %}
-As of `v0.11.0` you can add additional users and update the default user's name, email and password.
-{% endhint %}
-
 | Username            | Password   |
 | ------------------- | ---------- |
 | `admin@example.com` | `password` |
+
+### Change User Account
+
+You can change the default user account on the admin panel.
+
+* In the top left corner click on the A logo.&#x20;
+* Click on Profile&#x20;
+* Change the `Name`, `E-Mail Address` and `Password` to your liking.
+
+### Create User Account
+
+You can create additional user accounts.&#x20;
+
+* On the right side menu click on `Users`
+* Click on `New User`
+* Fill in the `Name`, `E-Mail Address, Password` and P`assword confirmation` to your liking.
+* Choose the needed role for the user under `Role`.
+
+The difference between the Roles can be found in the [Authorization](authorization.md) section.
