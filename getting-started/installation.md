@@ -103,7 +103,7 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - DB_CONNECTION=mariadb
+            - DB_CONNECTION=mysql
             - DB_HOST=db
             - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
