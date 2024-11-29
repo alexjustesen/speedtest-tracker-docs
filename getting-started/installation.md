@@ -47,11 +47,10 @@ services:
 ```
 {% endtab %}
 
-{% tab title="MariaDB/MySQL" %}
-```yaml
-services:
-    speedtest-tracker:
-        image: lscr.io/linuxserver/speedtest-tracker:latest
+{% tab title="MariaDB" %}
+<pre class="language-yaml"><code class="lang-yaml">services:
+<strong>    speedtest-tracker:
+</strong>        image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
         container_name: speedtest-tracker
         ports:
@@ -60,7 +59,7 @@ services:
         environment:
             - PUID=1000
             - PGID=1000
-            - DB_CONNECTION=mysql
+            - DB_CONNECTION=mariadb
             - DB_HOST=db
             - DB_PORT=3306
             - DB_DATABASE=speedtest_tracker
@@ -88,7 +87,53 @@ services:
             - speedtest-db:/var/lib/mysql
 volumes:
   speedtest-db:
+</code></pre>
+{% endtab %}
+
+{% tab title="MySQL" %}
+```yaml
+services:
+    speedtest-tracker:
+        image: lscr.io/linuxserver/speedtest-tracker:latest
+        restart: unless-stopped
+        container_name: speedtest-tracker
+        ports:
+            - 8080:80
+            - 8443:443
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - DB_CONNECTION=mariadb
+            - DB_HOST=db
+            - DB_PORT=3306
+            - DB_DATABASE=speedtest_tracker
+            - DB_USERNAME=speedy
+            - DB_PASSWORD=password
+            - APP_KEY=
+            - DATETIME_FORMAT=
+            - APP_TIMEZONE=
+            - SPEEDTEST_SCHEDULE= # Optional
+            - SPEEDTEST_SERVERS= # Optional
+        volumes:
+            - /path/to/data:/config
+            - /path/to-custom-ssl-keys:/config/keys
+        depends_on:
+            - db
+    db:
+        image: mysql:9
+        restart: always
+        environment:
+            - MARIADB_DATABASE=speedtest_tracker
+            - MARIADB_USER=speedy
+            - MARIADB_PASSWORD=password
+            - MARIADB_RANDOM_ROOT_PASSWORD=true
+        volumes:
+            - speedtest-db:/var/lib/mysql
+volumes:
+  speedtest-db:
 ```
+
+
 {% endtab %}
 
 {% tab title="Postgres" %}
