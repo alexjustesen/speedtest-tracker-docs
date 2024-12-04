@@ -52,7 +52,7 @@ Once set restart the container.
 
 <summary>Scheduled tests give lower results then manual tests</summary>
 
-Starting your cron schedule at an off-peak minute can help reduce network congestion or avoid overloading a speed test server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on the issue can help you get the formatting right.
+Starting your cron schedule at an off-peak minute can help reduce network congestion or avoid overloading a speed test server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on this issue can help you get the formatting right.
 
 </details>
 

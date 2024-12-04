@@ -184,7 +184,7 @@ volumes:
 {% step %}
 #### Environment Variables
 
-In order for the application to run smoothly, some environment variables need to be test.  Check out the [Environment Variables](environment-variables.md) section. Make sure you set all the **Required** variables.
+In order for the application to run smoothly, some environment variables need to be set.  Check out the [Environment Variables](environment-variables.md) section. Make sure you set all the **Required** variables.
 {% endstep %}
 
 {% step %}
@@ -196,7 +196,7 @@ Optionally you can set variables to have automatic speedtest on an schedule. Che
 {% step %}
 #### Start the Container
 
-You can now start the container comform the platform you are on.&#x20;
+You can now start the container accordingly the platform you are on.&#x20;
 {% endstep %}
 
 {% step %}

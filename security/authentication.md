@@ -6,6 +6,8 @@ Speedtest Tracker uses Filament for the admin panel. During the install process 
 
 ### Default User Account
 
+During the first start of the application a default admin account is created for you:
+
 | Username            | Password   |
 | ------------------- | ---------- |
 | `admin@example.com` | `password` |
@@ -25,9 +27,18 @@ The difference between the Roles can be found in the [Authorization](authorizati
 
 ### Change User Account
 
-You can change the default user account on the admin panel.
+#### Login Details
 
-* In the top left corner click on the A logo.
+You can update the login details of the default user account or any additional accounts through the admin panel. Every user can update these details for there own account.
+
+* In the top right corner click on the user logo next to the bell icon.&#x20;
 * Click on Profile
 * Change the `Name`, `E-Mail Address` and `Password` to your liking.
 
+#### Change Account Roles
+
+As an Admin you can change the the account details like roles of other user accounts.&#x20;
+
+* On the right side menu click on `Users`
+* Click on user account you want to change
+* Change the `Name`, `E-Mail Address` ,`Password` and `Role` to your liking.
