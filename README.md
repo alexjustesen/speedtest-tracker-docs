@@ -11,11 +11,9 @@ description: >-
 Docs are up to date through version: `0.24.x`
 {% endhint %}
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>V0.20.6 Dashboard</p></figcaption></figure>
+<figure><img src=".gitbook/assets/dashboard.png" alt=""><figcaption></figcaption></figure>
 
-### Introduction
 
-Speedtest Tracker is a self-hosted application that monitors the performance and uptime of your internet connection.
 
 #### Why might I want this?
 
