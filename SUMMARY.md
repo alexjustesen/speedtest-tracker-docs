@@ -23,7 +23,7 @@
 ## ⚙️ Settings
 
 * [Data Integrations](settings/data-platforms/README.md)
-  * [InfluxDB2](settings/data-platforms/influxdb2.md)
+  * [InfluxDB v2](settings/data-platforms/influxdb2.md)
 * [Notifications](settings/notifications/README.md)
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
