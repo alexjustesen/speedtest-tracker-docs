@@ -41,7 +41,6 @@
 * [Embed Dashboard](other/embed-dashboard.md)
 * [Health Check](other/health-check.md)
 * [Community Projects](other/community-projects.md)
-* [Stream Deck](other/stream-deck.md)
 
 ## 🖥️ API
 
