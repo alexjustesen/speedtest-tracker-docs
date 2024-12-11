@@ -9,7 +9,7 @@ These instructions will run you through setting up the application on a QNAP NAS
 1. Open **"Container Station"** and select **"Applications"** from the left-hand navigation menu.
 2. Press the **"Create"** button.
 3. Provide a name for the application.
-4. Paste the below Docker Compose code into the text box, this is a modification of the MariaDB Docker Compose [install ](../../)instructions.
+4. Paste the below Docker Compose code into the text box, this is a modification of the MariaDB Docker Compose [install ](using-docker.md)instructions.
 5. Click **"Validate"** to make sure there are no errors.
 6. Click **"Create"** to deploy the application.
 
@@ -30,19 +30,17 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_KEY=
-      - DB_CONNECTION=mysql
-      - DB_HOST=192.168.1.4
+      - DB_CONNECTION=mariadb
+      - DB_HOST=db
       - DB_PORT=3306
       - DB_DATABASE=speedtest_tracker
       - DB_USERNAME=speedy
       - DB_PASSWORD=password
-      - SPEEDTEST_SCHEDULE=
-      - SPEEDTEST_SERVERS=
-      - PRUNE_RESULTS_OLDER_THAN=
-      - CHART_DATETIME_FORMAT= 
+      - APP_KEY=
       - DATETIME_FORMAT=
       - APP_TIMEZONE=
+      - SPEEDTEST_SCHEDULE= # Optional
+      - SPEEDTEST_SERVERS= # Optional
     volumes:
       - /path/to-data:/config
       - /path/to-custom-ssl-keys:/config/keys
