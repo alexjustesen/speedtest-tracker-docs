@@ -6,7 +6,12 @@
 
 ## 🚀 Getting Started
 
-* [Installation](getting-started/installation.md)
+* [Installation](getting-started/installation/README.md)
+  * [Using Docker or Docker Compose](getting-started/installation/installation.md)
+  * [Using Kubernetes](getting-started/installation/using-kubernetes.md)
+  * [Using QNAP](getting-started/installation/using-qnap.md)
+  * [Using Synology](getting-started/installation/using-synology.md)
+  * [Using Unraid](getting-started/installation/using-unraid.md)
 * [Environment Variables](getting-started/environment-variables.md)
 * [Database Drivers](getting-started/database-drivers.md)
 
