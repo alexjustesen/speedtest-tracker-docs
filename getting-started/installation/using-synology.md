@@ -7,7 +7,7 @@ description: >-
 # Using Synology
 
 {% hint style="warning" %}
-The following directions are for the old "Docker" application, if you're using "Container Manager" you can follow the docker compose instructions in  [installation.md](installation.md "mention").
+The following directions are for the old "Docker" application, if you're using "Container Manager" you can follow the docker compose instructions in [using-docker.md](using-docker.md "mention").
 {% endhint %}
 
 ### Install on a Synology NAS
