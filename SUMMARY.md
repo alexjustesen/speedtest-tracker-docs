@@ -49,7 +49,6 @@
 
 ## 🖥️ API
 
-* [Getting Started](api/getting-started.md)
 * [Latest Result](api/latest-result.md)
 
 ## 🤹 Contributing

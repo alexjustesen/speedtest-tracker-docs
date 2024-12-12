@@ -1,17 +1,17 @@
 # Latest Result
 
-### Legacy Endpoints
-
-#### Authentication
+### Authentication
 
 No authentication required.
 
-{% swagger method="get" path="" baseUrl="/api/speedtest/latest" summary="Get the latest speedtest result" expanded="false" %}
-{% swagger-description %}
-Provides backwards compatibility for [Homepage](https://github.com/benphelps/homepage) and [Organizr](https://github.com/causefx/Organizr) home lab dashboards.
-{% endswagger-description %}
+### Get the latest speedtest result
 
-{% swagger-response status="200: OK" description="" %}
+<mark style="color:blue;">`GET`</mark> `/api/speedtest/latest`
+
+Provides backwards compatibility for [Homepage](https://github.com/benphelps/homepage) and [Organizr](https://github.com/causefx/Organizr) home lab dashboards.
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     "message": "ok",
@@ -31,13 +31,13 @@ Provides backwards compatibility for [Homepage](https://github.com/benphelps/hom
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404: Not Found" description="" %}
+{% tab title="404: Not Found " %}
 ```javascript
 {
     "message": "No results found."
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
