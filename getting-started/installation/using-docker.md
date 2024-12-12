@@ -6,7 +6,7 @@ description: >-
 
 # Using Docker or Docker Compose
 
-Setting up your environment with Docker Compose is the recommended way as it'll setup the application and a database for you.  These steps will run you through setting up the application using Docker and Docker Compose.
+Setting up your environment with Docker Compose is the recommended way as it'll setup the application and a database for you. These steps will run you through setting up the application using Docker and Docker Compose.
 
 ### Install with Docker
 
@@ -14,11 +14,9 @@ Setting up your environment with Docker Compose is the recommended way as it'll 
 The Docker Run commands can be found below the compose examples. These instructions assume you have an appropriate database instance that already exists.
 {% endhint %}
 
-
-
 {% stepper %}
 {% step %}
-#### Docker Compose
+**Docker Compose**
 
 SQLite is fine for most installs but we also provide instructions for setting up MariaDB, MySQL and Postgres should you prefer those database drivers.
 
@@ -136,8 +134,6 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
 ```
-
-
 {% endtab %}
 
 {% tab title="MySQL" %}
@@ -223,7 +219,7 @@ services:
             - PGID=1000
             - DB_CONNECTION=pgsql
             - DB_HOST=db
-            - DB_PORT=3306
+            - DB_PORT=5432
             - DB_DATABASE=speedtest_tracker
             - DB_USERNAME=speedy
             - DB_PASSWORD=password
@@ -260,7 +256,7 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -e PGID=1000 \
     -e DB_CONNECTION=pgsql \
     -e DB_HOST= \
-    -e DB_PORT=3306 \
+    -e DB_PORT=5432 \
     -e DB_DATABASE=speedtest_tracker \
     -e DB_USERNAME= \
     -e DB_PASSWORD= \
@@ -278,31 +274,30 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
 {% endstep %}
 
 {% step %}
-#### Environment Variables
+**Environment Variables**
 
-In order for the application to run smoothly, some environment variables need to be set.  Check out the [Environment Variables](../environment-variables.md) section. Make sure you set all the **Required** variables.
+In order for the application to run smoothly, some environment variables need to be set. Check out the [Environment Variables](../environment-variables.md) section. Make sure you set all the **Required** variables.
 {% endstep %}
 
 {% step %}
-#### Speedtest Variables
+**Speedtest Variables**
 
-Optionally you can set variables to have automatic speedtest on an schedule. Check out the [Environment Variables](../environment-variables.md#speedtest) section on how to set the variables. As well see the [FAQ](../../help/faqs.md#speedtest) for tips on the best schedule&#x20;
+Optionally you can set variables to have automatic speedtest on an schedule. Check out the [Environment Variables](../environment-variables.md#speedtest) section on how to set the variables. As well see the [FAQ](../../help/faqs.md#speedtest) for tips on the best schedule
 {% endstep %}
 
 {% step %}
-#### Start the Container
+**Start the Container**
 
-You can now start the container accordingly the platform you are on.&#x20;
+You can now start the container accordingly the platform you are on.
 {% endstep %}
 
 {% step %}
-#### First Login
+**First Login**
 
-During the start the container there is an default  username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-user-account) after logging in.&#x20;
+During the start the container there is an default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-user-account) after logging in.
 {% endstep %}
 {% endstepper %}
 
 {% hint style="info" %}
 Complete overview of the Environment Variables for custom configuration can be found [here](../environment-variables.md)
 {% endhint %}
-
