@@ -16,7 +16,7 @@ During the first start of the application a default admin account is created for
 
 #### Login Details
 
-You can update the login details of your account through the profiel page. Every user can update these details for there own account.
+You can update the login details of your account through the profile page. Every user can update these details for there own account.
 
 * In the top right corner click on the user logo next to the bell icon.
 * Click on Profile
@@ -24,7 +24,7 @@ You can update the login details of your account through the profiel page. Every
 
 #### Change Account details
 
-As an Admin you can change the account details of other accounts like roles of other user accounts.
+As an Admin you can change the account details of other accounts.
 
 * On the right side menu click on `Users`
 * Click on user account you want to change
