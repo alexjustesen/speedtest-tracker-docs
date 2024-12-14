@@ -42,5 +42,3 @@ You can create additional user accounts.
 {% hint style="info" %}
 The difference between the Roles can be found in the [Authorization](authorization.md) section.
 {% endhint %}
-
-###

@@ -294,7 +294,7 @@ You can now start the container accordingly the platform you are on.
 {% step %}
 **First Login**
 
-During the start the container there is an default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-user-account) after logging in.
+During the start the container there is an default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-account-details) after logging in.
 {% endstep %}
 {% endstepper %}
 
