@@ -1,5 +1,7 @@
 ---
-description: Install Speedtest Tracker in a QNAP NAS using Container Station.
+description: >-
+  These instructions will run you through setting up Speedtest Tracker on a QNAP
+  NAS using Container Station.
 ---
 
 # Using QNAP
@@ -9,7 +11,7 @@ These instructions will run you through setting up the application on a QNAP NAS
 1. Open **"Container Station"** and select **"Applications"** from the left-hand navigation menu.
 2. Press the **"Create"** button.
 3. Provide a name for the application.
-4. Paste the below Docker Compose code into the text box, this is a modification of the MariaDB Docker Compose [install ](using-docker.md)instructions.
+4. Paste the below Docker Compose code into the text box, this is a modification of the MariaDB Docker Compose [install ](using-docker-compose.md)instructions.
 5. Click **"Validate"** to make sure there are no errors.
 6. Click **"Create"** to deploy the application.
 

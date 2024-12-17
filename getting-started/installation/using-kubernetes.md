@@ -1,6 +1,11 @@
+---
+description: >-
+  These instructions will run you through setting up Speedtest Tracker in a
+  Kubernetes cluster.
+---
+
 # Using Kubernetes
 
-Check out this amazing community kubernetes manifest to get you started.
+### Community Manifests
 
 {% embed url="https://github.com/maximemoreillon/kubernetes-manifests/tree/master/speedtest-tracker" %}
-
