@@ -8,7 +8,7 @@ description: >-
 # Introduction
 
 {% hint style="info" %}
-Docs are up to date through version: `0.26.x`
+Docs are up to date through version: `v1.0.1`
 {% endhint %}
 
 <figure><img src=".gitbook/assets/dashboard.png" alt=""><figcaption></figcaption></figure>

@@ -7,7 +7,8 @@
 ## 🚀 Getting Started
 
 * [Installation](getting-started/installation/README.md)
-  * [Using Docker or Docker Compose](getting-started/installation/using-docker.md)
+  * [Using Docker Compose](getting-started/installation/using-docker-compose.md)
+  * [Using Docker](getting-started/installation/using-docker.md)
   * [Using Kubernetes](getting-started/installation/using-kubernetes.md)
   * [Using QNAP](getting-started/installation/using-qnap.md)
   * [Using Synology](getting-started/installation/using-synology.md)
@@ -24,6 +25,7 @@
 
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
+* [Encryption](security/encryption.md)
 
 ## ⚙️ Settings
 
