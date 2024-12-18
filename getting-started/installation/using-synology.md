@@ -1,13 +1,13 @@
 ---
 description: >-
-  These instructions will run you through setting up the application on a
-  Synology NAS.
+  These instructions will run you through setting up Speedtest Tracker on a
+  Synology NAS using Container Manager.
 ---
 
 # Using Synology
 
 {% hint style="warning" %}
-The following directions are for the old "Docker" application, if you're using "Container Manager" you can follow the docker compose instructions in [using-docker.md](using-docker.md "mention").
+The following directions are for the old "Docker" application, if you're using "Container Manager" you can follow the docker compose instructions in [using-docker-compose.md](using-docker-compose.md "mention").
 {% endhint %}
 
 ### Install on a Synology NAS

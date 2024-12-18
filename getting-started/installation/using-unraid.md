@@ -1,7 +1,7 @@
 ---
 description: >-
-  These instructions will run you through setting up the application on a server
-  running Unraid OS.
+  These instructions will run you through setting up Speedtest Tracker on an
+  Unraid NAS using Community Applications.
 ---
 
 # Using Unraid
