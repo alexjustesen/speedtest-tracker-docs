@@ -38,6 +38,7 @@
 
 ## 👀 Other
 
+* [Speedtest Process](other/speedtest-process.md)
 * [Proxies](other/proxies/README.md)
   * [Cloudflare Tunnel (Zero Trust)](other/proxies/cloudflare-tunnel-zero-trust.md)
   * [Traefik](other/proxies/traefik.md)
