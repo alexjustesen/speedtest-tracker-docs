@@ -1,12 +1,8 @@
 # Authorization
 
-{% hint style="info" %}
-Role based authorization introduced in `v0.12.0-beta.6`
-{% endhint %}
-
 ### Results
 
-<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>View any (list)</td><td>true</td><td>true</td></tr><tr><td>View (show)</td><td>true</td><td>true</td></tr><tr><td>Create</td><td>true</td><td>true</td></tr><tr><td>Update</td><td>true</td><td>true</td></tr><tr><td>Delete any (bulk)</td><td>false</td><td>true</td></tr><tr><td>Delete</td><td>false</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>View any (list)</td><td>true</td><td>true</td></tr><tr><td>View (show)</td><td>true</td><td>true</td></tr><tr><td>Create</td><td>false</td><td>false</td></tr><tr><td>Update</td><td>true</td><td>true</td></tr><tr><td>Delete any (bulk)</td><td>false</td><td>true</td></tr><tr><td>Delete</td><td>false</td><td>true</td></tr></tbody></table>
 
 #### Notes
 
@@ -27,7 +23,7 @@ Role based authorization introduced in `v0.12.0-beta.6`
 
 ### Other
 
-<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>Trigger a manual Speedtest</td><td>true</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>Trigger a manual Speedtest</td><td>false</td><td>true</td></tr></tbody></table>
 
 ***
 
