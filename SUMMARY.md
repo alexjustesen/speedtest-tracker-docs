@@ -52,7 +52,8 @@
 
 ## 🖥️ API
 
-* [Latest Result](api/latest-result.md)
+* [v1](api/v1.md)
+* [Latest Result (deprecated)](api/latest-result.md)
 
 ## 🤹 Contributing
 

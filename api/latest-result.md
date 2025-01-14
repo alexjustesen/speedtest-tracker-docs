@@ -1,5 +1,9 @@
 # Latest Result
 
+{% hint style="warning" %}
+This endpoint is deprecated and will be removed in a future release.
+{% endhint %}
+
 ### Authentication
 
 No authentication required.
