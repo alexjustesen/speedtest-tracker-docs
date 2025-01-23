@@ -19,8 +19,8 @@ services:
             - CHART_DATETIME_FORMAT= 
             - DATETIME_FORMAT=
             - APP_TIMEZONE=
-            - APP_URL=speedtest.yourdomain.com # Change this to your domain name
-            - ASSET_URL=speedtest.yourdomain.com # Change this to your domain name
+            - APP_URL=https://speedtest.yourdomain.com # Change this to your domain name
+            - ASSET_URL=https://speedtest.yourdomain.com # Change this to your domain name
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
