@@ -1,4 +1,4 @@
-# Latest Result
+# Latest Result (deprecated)
 
 {% hint style="warning" %}
 This endpoint is deprecated and will be removed in a future release.
@@ -13,6 +13,12 @@ No authentication required.
 <mark style="color:blue;">`GET`</mark> `/api/speedtest/latest`
 
 Provides backwards compatibility for [Homepage](https://github.com/benphelps/homepage) and [Organizr](https://github.com/causefx/Organizr) home lab dashboards.
+
+{% hint style="info" %}
+Homepage now [supports](https://github.com/gethomepage/homepage/pull/4695) the latest API spec which requires a token.
+{% endhint %}
+
+
 
 {% tabs %}
 {% tab title="200: OK " %}
