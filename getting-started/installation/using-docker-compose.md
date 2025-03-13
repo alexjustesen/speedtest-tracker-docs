@@ -18,9 +18,7 @@ Docker run commands can be found on the [Using Docker](using-docker.md) page and
 {% step %}
 #### Generate an Application Key
 
-You can get a generated key on [https://speedtest-tracker.dev/](https://speedtest-tracker.dev/) or run the command below. The key is required for [encryption](../../security/encryption.md).
-
-Copy this key including the `base64:` prefix and paste it as your `APP_KEY` value.
+Run the command below to generate a key, the key is required for [encryption](../../security/encryption.md). Copy this key including the `base64:` prefix and paste it as your `APP_KEY` value.
 
 ```bash
 echo -n 'base64:'; openssl rand -base64 32;
