@@ -46,7 +46,7 @@ APP_TIMEZONE=UTC
 ```
 
 {% hint style="info" %}
-Generate the APP\_KEY at https://speedtest-tracker.dev
+Generate the APP\_KEY at with the command; `echo -n 'base64:'; openssl rand -base64 32;`
 {% endhint %}
 
 #### 3. Install Composer dependencies
