@@ -10,7 +10,7 @@ description: A running list of frequently ask questions and their answers.
 
 <summary>I get a warning on container start up that the <code>APP_KEY</code> is missing</summary>
 
-You can generate a key here: [https://speedtest-tracker.dev](https://speedtest-tracker.dev).
+You need a `APP_KEY` for the encryption. See the [installation docs](../getting-started/installation/) how to generate one.
 
 </details>
 
@@ -55,8 +55,6 @@ Once set restart the container.
 Starting your cron schedule at an off-peak minute can help reduce network congestion or avoid overloading a speed test server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on this issue can help you get the formatting right.
 
 </details>
-
-
 
 ### Other
 
