@@ -6,9 +6,9 @@ Notifications sent to the mail channel will be emailed to the list of recipients
 
 ### Setting Up SMTP
 
-Speedtest Tracker uses SMTP mail protocol to send email messages, you can use any service that allows you to send emails via SMTP.&#x20;
+Speedtest Tracker uses SMTP mail protocol to send email messages, you can use any service that allows you to send emails via SMTP.
 
-To configure the mail server settings you'll need to update the following variables in your `.env` file or add them to the environment variables passed into the container. When choosing mail encryption both `ssl` and `tls` protocols are supported and you'll want to check with your mail provider for which to use and which port.
+To configure the mail server settings you'll need to update the following variables in your `.env` file or add them to the environment variables passed into the container. When choosing mail scheme both `ssl` and `tls` protocols are supported and you'll want to check with your mail provider for which to use and which port.
 
 {% hint style="warning" %}
 Make sure these are not set in both your `.env` file or your `docker-compose.yml` file as that can cause issues.
@@ -20,21 +20,21 @@ MAIL_HOST=mailhog
 MAIL_PORT=1025
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
-MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS="hello@example.com"
 MAIL_FROM_NAME="Speedtest Tracker"
+MAIL_SCHEME=null
 ```
 
 **GMAIL example:**
 
 Steps for creating an app password.
-- Go to your <a href="https://myaccount.google.com" title="Click here to access your Google Account" target="_blank">Google Account</a>
-.
-- Select Security.
-- Under "How you sign in to Google," choose 2-Step Verification.
-- Click on App passwords.
-- Enter a name and generate a password.
-- Remember to copy the password before closing; otherwise, you'll need to create another one.
+
+* Go to your [Google Account](https://myaccount.google.com) .
+* Select Security.
+* Under "How you sign in to Google," choose 2-Step Verification.
+* Click on App passwords.
+* Enter a name and generate a password.
+* Remember to copy the password before closing; otherwise, you'll need to create another one.
 
 ```
 MAIL_MAILER=smtp
@@ -42,9 +42,9 @@ MAIL_HOST=smtp.gmail.com
 MAIL_PORT=465
 MAIL_USERNAME=username@gmail.com
 MAIL_PASSWORD="password"
-MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=username@gmail.com
 MAIL_FROM_NAME="Speedtest Tracker"
+MAIL_SCHEME=tls
 ```
 
 ### Triggers
