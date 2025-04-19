@@ -8,7 +8,7 @@ description: >-
 
 Since Speedtest Tracker is built on the Laravel Framework any of the framework's supported database [drivers](https://laravel.com/docs/10.x/database#configuration) are also supported.
 
-SQLite ships as the default driver but you can also use MySQL/MariaDB/Postgres.&#x20;
+SQLite ships as the default driver but you can also use MySQL/MariaDB/Postgres.
 
 > While SQL Server is supported by Laravel it hasn't been tested with Speedtest Tracker so no support will be provided for that driver.
 
@@ -18,7 +18,7 @@ SQLite ships as the default driver but you can also use MySQL/MariaDB/Postgres.&
 
 #### SQLite (Default)
 
-SQLite is a good option for simple installs. The database will be create automatically inside the docker volume.&#x20;
+SQLite is a good option for simple installs. The database will be create automatically inside the docker volume.
 
 | Environment Variable | Value    |
 | -------------------- | -------- |
@@ -56,3 +56,4 @@ SQLite is a good option for simple installs. The database will be create automat
 | `DB_DATABASE`        | Name of the database you'll connect to.                  |
 | `DB_USERNAME`        | User that'll be used to connect to the database.         |
 | `DB_PASSWORD`        | Password for the user above.                             |
+| `DB_SEARCH_PATH`     | To change the database schema used by Postgres.          |
