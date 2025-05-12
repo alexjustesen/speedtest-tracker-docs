@@ -28,9 +28,5 @@ Maintenance commands help fix issues that might crop up over time.
 
 <table><thead><tr><th width="261">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>app:result-fix-statuses</code></td><td>Reviews the data payload of each result and corrects the status attribute.</td></tr></tbody></table>
 
-### Test Notifications
 
-Notification commands allow you to test different delivery channels. If no channel is specified, Apprise will be used by default.
-
-<table><thead><tr><th width="447">Command</th><th>Description</th></tr></thead><tbody><tr><td><code>notification:test completed --channel=database</code></td><td>Sent a test Completed notification to the database</td></tr><tr><td><code>notification:test threshold --channel=database</code></td><td>Sent a test threshold breach notification to the database</td></tr><tr><td><code>notification:test completed --channel=wehbook</code></td><td>Sent a test Completed notification to the webhook channel</td></tr><tr><td><code>notification:test threshold --channel=webhook</code></td><td>Sent a test threshold breach notification to the webhook channel</td></tr><tr><td><code>notification:test completed --channel=maill</code></td><td>Sent a test Completed notification to the mail channel</td></tr><tr><td><code>notification:test threshold --channel=maill</code></td><td>Sent a test threshold breach notification to the mail channel</td></tr><tr><td><code>notification:test completed --channel=apprise</code></td><td>Sent a test Completed notification to the apprise channel</td></tr><tr><td><code>notification:test threshold --channel=apprise</code></td><td>Sent a test threshold breach notification to the apprise channel</td></tr></tbody></table>
 
