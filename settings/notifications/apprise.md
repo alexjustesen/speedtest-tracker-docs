@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Apprise
 
 Speedtest Tracker uses [Apprise](https://github.com/caronc/apprise-api) to send notifications to a wide variety of messaging services with a simple, unified configuration.
