@@ -11,8 +11,6 @@ curl APP_URL/api/healthcheck
 You can also add this to your Docker Compose file so the Docker service can monitor that the container has started successfully.
 
 ```yaml
-version: '3.4'
-
 healthcheck:
     test: curl -fSs APP_URL/api/healthcheck | jq -r .message || exit 1
     interval: 10s
