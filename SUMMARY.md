@@ -52,8 +52,18 @@
 
 ## 🖥️ API
 
-* [v1](api/v1.md)
-* [Latest Result (deprecated)](api/latest-result.md)
+* [Authorization](api/authorization.md)
+* [Responses](api/responses/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: true
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: speedtest-tracker-api
+    ```
 
 ## 🤹 Contributing
 
