@@ -4,12 +4,14 @@ Speedtest Tracker uses the [Official Ookla CLI](https://www.speedtest.net/apps/c
 
 {% stepper %}
 {% step %}
+
 #### Waiting
 
 The speedtest run request was created but has not been started.
 {% endstep %}
 
 {% step %}
+
 #### Started
 
 The speedtest process has been started by a queue worker.

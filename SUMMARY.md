@@ -34,7 +34,7 @@
 * [Notifications](settings/notifications/README.md)
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
-  * [Telegram](settings/notifications/telegram.md)
+  * [Webhook](settings/notifications/webhook.md)
 
 ## 👀 Other
 
