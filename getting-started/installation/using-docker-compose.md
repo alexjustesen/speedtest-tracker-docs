@@ -194,7 +194,7 @@ If you would like to provide your own SSL keys, they must be named `cert.crt` (f
 {% step %}
 #### **Environment Variables**
 
-In order for the application to run smoothly, some environment variables need to be set. Check out the [Environment Variables](../environment-variables.md) section. Make sure all r**equired** variables are configured.
+In order for the application to run smoothly, some environment variables need to be set. Check out the [Environment Variables](../environment-variables.md) section. Make sure all **required** variables are configured.
 {% endstep %}
 
 {% step %}
