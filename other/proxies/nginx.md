@@ -4,7 +4,7 @@
 Tracker to expose the Dashboard publicly with a trusted certificate.
 
 First, you will need to add the `APP_URL` and `ASSET_URL` environment variables
-to the docker compose.
+to your `docker-compose.yml`.
 
 ```yaml
 services:
@@ -67,11 +67,6 @@ server {
                 proxy_set_header X-Forwarded-Server $host;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Proto $scheme;
-                proxy_redirect http:// https://;
-                proxy_http_version 1.1;
-                proxy_pass_request_headers on;
-                proxy_set_header Connection "keep-alive";
-                proxy_store off;
 
                 proxy_pass http://speedtest-container-host:80;
         }
