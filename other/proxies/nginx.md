@@ -1,11 +1,10 @@
 # Nginx
 
 [Nginx](https://nginx.org) can be used as a Reverse Proxy in front of Speedtest
-Tracker when you want to expose the Dashboard publicly with a trusted
-certificate.
+Tracker to expose the Dashboard publicly with a trusted certificate.
 
 First, you will need to add the `APP_URL` and `ASSET_URL` environment variables
-to the docker compose for the URL you will be exposing to reach the Dashboard.
+to the docker compose.
 
 ```yaml
 services:
@@ -32,10 +31,12 @@ services:
         restart: unless-stopped
 ```
 
-Next, you will need to configure nginx to reverse proxy the Speedtest Tracker
-app.
+Next, you will need to configure nginx to proxy to the Speedtest Tracker app.
 
-at something like /etc/nginx/sites-enabled/speedtest.conf, have the following:
+{% hint style="info" %}
+Depending on how you generate your SSL certificates and how you configure your
+Docker network, you may need to adjust the `ssl_` and `proxy_pass` values.
+{% endhint %}
 
 ```nginx
 server {
@@ -76,8 +77,3 @@ server {
         }
 }
 ```
-
-{% hint style="info" %}
-Depending on how you generate your SSL certificates and how you configure your
-docker network, you may need to further adjust the `ssl_` and `proxy_pass` settings.
-{% endhint %}
