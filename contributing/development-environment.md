@@ -20,10 +20,10 @@ These directions assume you have a working knowledge of the Laravel framework. I
 
 #### 1. Clone the repository
 
-First let's clone the [repository](https://github.com/alexjustesen/speedtest-tracker) to your machine, I prefer [GitHub's CLI](https://cli.github.com/) so that command is included below.
+First let's clone the [repository](https://github.com/alexjustesen/speedtest-tracker) to your machine.
 
 ```bash
-gh repo clone alexjustesen/speedtest-tracker \
+git clone git@github.com:alexjustesen/speedtest-tracker \
     && cd speedtest-tracker
 ```
 
