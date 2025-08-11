@@ -56,9 +56,9 @@
 * [Authorization](api/authorization.md)
 * [Responses](api/responses/README.md)
   * ```yaml
-    type: builtin:openapi
     props:
       models: true
+    type: builtin:openapi
     dependencies:
       spec:
         ref:

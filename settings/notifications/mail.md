@@ -42,7 +42,7 @@ MAIL_HOST=smtp.gmail.com
 MAIL_PORT=465
 MAIL_USERNAME=username@gmail.com
 MAIL_PASSWORD="password"
-MAIL_FROM_ADDRESS=username@gmail.com
+MAIL_FROM_ADDRESS="username@gmail.com"
 MAIL_FROM_NAME="Speedtest Tracker"
 MAIL_SCHEME=tls
 ```
