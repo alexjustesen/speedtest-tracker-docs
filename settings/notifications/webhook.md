@@ -12,14 +12,13 @@ Payload sent for a completed test
 {
   "result_id": 2,
   "site_name": "Speedtest Tracker",
-  "service": "Ookla",
-  "serverName": "Speedtest",
-  "serverId": 12345,
+  "server_name": "Speedtest",
+  "server_id": 12345,
   "isp": "Speedtest Communications",
   "ping": 6.7,
   "download": 93281280,
   "upload": 28769728,
-  "packetLoss": 0,
+  "packet_loss": 0,
   "speedtest_url": "https://docs.speedtest-tracker.dev",
   "url": "http://localhost/admin/results"
 }
