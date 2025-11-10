@@ -146,50 +146,6 @@ volumes:
   speedtest-db:
 ```
 {% endtab %}
-
-{% tab title="Postgres" %}
-```yaml
-services:
-    speedtest-tracker:
-        image: lscr.io/linuxserver/speedtest-tracker:latest
-        restart: unless-stopped
-        container_name: speedtest-tracker
-        ports:
-            - 8080:80
-            - 8443:443
-        environment:
-            - PUID=1000
-            - PGID=1000
-            - APP_KEY=
-            - DB_CONNECTION=pgsql
-            - DB_HOST=db
-            - DB_PORT=5432
-            - DB_DATABASE=speedtest_tracker
-            - DB_USERNAME=speedtest_tracker
-            - DB_PASSWORD=password
-        volumes:
-            - /path/to/data:/config
-            - /path/to-custom-ssl-keys:/config/keys
-        depends_on:
-            - db
-    db:
-        image: postgres:17
-        restart: always
-        environment:
-            - POSTGRES_DB=speedtest_tracker
-            - POSTGRES_USER=speedtest_tracker
-            - POSTGRES_PASSWORD=password
-        volumes:
-            - speedtest-db:/var/lib/postgresql/data
-        healthcheck:
-            test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-            interval: 5s
-            retries: 5
-            timeout: 5s
-volumes:
-  speedtest-db:
-```
-{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
