@@ -146,6 +146,10 @@ volumes:
   speedtest-db:
 ```
 {% endtab %}
+
+{% tab title="Postgres" %}
+
+{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
