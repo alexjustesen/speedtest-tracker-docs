@@ -14,7 +14,7 @@ If you have a history of results, you can use the `Export current results` featu
 
 ### Grafana Dashboard
 
-You can use this community made Grafana Dashbaord to visualize your data.
+You can use this community made Grafana Dashboard to visualize your data.
 
 {% embed url="https://github.com/masterwishx/Speedtest-Tracker-v2-InfluxDBv2" %}
 
