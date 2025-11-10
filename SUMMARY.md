@@ -44,7 +44,6 @@
   * [Traefik](other/proxies/traefik.md)
   * [Tailscale](other/proxies/tailscale.md)
   * [Nginx](other/proxies/nginx.md)
-* [Caching](other/caching.md)
 * [Commands](other/commands.md)
 * [Data Dictionary](other/data-dictionary.md)
 * [Embed Dashboard](other/embed-dashboard.md)

@@ -1,14 +1,15 @@
 # Cloudflare Tunnel (Zero Trust)
 
-[Cloudflare tunnel ](https://www.cloudflare.com/nl-nl/products/tunnel/)can be used as a Reverse Proxy in front of Speedtest Tracker when you want to expose the Dashboard publicly without exposing your IP Address and with a trusted certificate,You will need at add the `APP_URL` envoirment.
+A [Cloudflare tunnel ](https://www.cloudflare.com/nl-nl/products/tunnel/)can be used as a reverse proxy in front of Speedtest Tracker when you want to expose the application publicly without exposing your IP address.
 
 ### Cloudflare Tunnel Configuration
 
-* Go to the **Networks** -> **Tunnels** page.
-* For the tunnel you want to add the Speedtest Tracker to. Click on **Edit**
-* Go to **Public Hostname**
-* Click on **Add a public hostname**
-* Fill in the fields the following field
+* Update your `APP_URL` to the public URL you are going to use and restart the service.
+* In the Cloudflare panel go to **Zero Trust** -> **Networks** -> **Tunnels** page.
+* For the tunnel you want to add the Speedtest Tracker to click on **Edit** or add a new tunnel.
+* Go to **Public Hostname.**
+* Click on **Add a public hostname.**
+* Fill in the following fields.
   * **Subdomain:** The subdomain you want to access the Speedtest Tracker on.
   * **Domain:** The domain you want to access the Speedtest Tracker on.
   * **Type:** Connection type to the Speedtest Tracker (http/https)

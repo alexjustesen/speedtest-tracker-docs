@@ -23,7 +23,7 @@
 
 ### Other
 
-<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>Trigger a manual Speedtest</td><td>false</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="302"></th><th data-type="checkbox">User</th><th data-type="checkbox">Admin</th></tr></thead><tbody><tr><td>Manage API tokens</td><td>false</td><td>true</td></tr><tr><td>Trigger a manual Speedtest</td><td>false</td><td>true</td></tr></tbody></table>
 
 ***
 
