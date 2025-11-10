@@ -30,8 +30,8 @@ services:
       - 8080:80
       - 8443:443
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=
+      - PGID=
       - DB_CONNECTION=mariadb
       - DB_HOST=db
       - DB_PORT=3306

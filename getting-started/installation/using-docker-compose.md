@@ -16,7 +16,7 @@ Docker run commands can be found on the [Using Docker](using-docker.md) page and
 
 {% stepper %}
 {% step %}
-#### Generate an Application Key
+**Generate an Application Key**
 
 Run the command below to generate a key, the key is required for [encryption](../../security/encryption.md). Copy this key including the `base64:` prefix and paste it as your `APP_KEY` value.
 
@@ -26,9 +26,15 @@ echo -n 'base64:'; openssl rand -base64 32;
 {% endstep %}
 
 {% step %}
-#### **Setting Up Docker**
+**Setting Up Docker**
 
 SQLite is fine for most installs but you can also use more traditional relational databases like MariaDB, MySQL and Postgres.
+
+{% hint style="info" %}
+You will need to get your user's `PUID` and `PGID`, you can do this by running `id $user` on the host.
+
+[https://docs.linuxserver.io/general/understanding-puid-and-pgid/](https://docs.linuxserver.io/general/understanding-puid-and-pgid/)
+{% endhint %}
 
 {% tabs %}
 {% tab title="SQLite" %}
@@ -42,8 +48,8 @@ services:
             - 8080:80
             - 8443:443
         environment:
-            - PUID=1000
-            - PGID=1000
+            - PUID= 
+            - PGID=
             - APP_KEY=
             - DB_CONNECTION=sqlite
         volumes:
@@ -62,8 +68,8 @@ services:
             - 8080:80
             - 8443:443
         environment:
-            - PUID=1000
-            - PGID=1000
+            - PUID=
+            - PGID=
             - APP_KEY=
             - DB_CONNECTION=mariadb
             - DB_HOST=db
@@ -107,8 +113,8 @@ services:
             - 8080:80
             - 8443:443
         environment:
-            - PUID=1000
-            - PGID=1000
+            - PUID=
+            - PGID=
             - APP_KEY=
             - DB_CONNECTION=mysql
             - DB_HOST=db
@@ -192,13 +198,13 @@ If you would like to provide your own SSL keys, they must be named `cert.crt` (f
 {% endstep %}
 
 {% step %}
-#### **Environment Variables**
+**Environment Variables**
 
 In order for the application to run smoothly, some environment variables need to be set. Check out the [Environment Variables](../environment-variables.md) section. Make sure all **required** variables are configured.
 {% endstep %}
 
 {% step %}
-#### **Configuration Variables (Optional)**
+**Configuration Variables (Optional)**
 
 You can set configuration variables to have automatic speedtest on an schedule. Check out the [Environment Variables](../environment-variables.md#speedtest) section on how to set the variables. Also see the [FAQ](../../help/faqs.md#speedtest) for tips effectively scheduling tests.
 
@@ -208,13 +214,13 @@ Complete overview of the Environment Variables for custom configuration can be f
 {% endstep %}
 
 {% step %}
-#### **Start the Container**
+**Start the Container**
 
 You can now start the container accordingly the platform you are on.
 {% endstep %}
 
 {% step %}
-#### **First Login**
+**First Login**
 
 During the start the container there is a default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-account-details) after logging in.
 {% endstep %}
