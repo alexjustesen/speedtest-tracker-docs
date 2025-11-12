@@ -22,8 +22,11 @@ MAIL_USERNAME=
 MAIL_PASSWORD=
 MAIL_FROM_ADDRESS=
 MAIL_FROM_NAME=
-MAIL_SCHEME=
 ```
+
+{% hint style="info" %}
+`MAIL_SCHEME` is optional, only use it if you need to define `smtp` or `smtps` otherwise Laravel will determine the scheme based on the port provided.
+{% endhint %}
 
 ***
 
@@ -42,7 +45,6 @@ MAIL_HOST=smtp.gmail.com
 MAIL_PORT=465
 MAIL_USERNAME="username@gmail.com"
 MAIL_PASSWORD="password"
-MAIL_SCHEME=smtps
 MAIL_FROM_ADDRESS="username@gmail.com"
 MAIL_FROM_NAME="Speedtest Tracker"
 ```
