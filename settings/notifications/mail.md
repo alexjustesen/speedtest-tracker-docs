@@ -16,35 +16,35 @@ Make sure these are not set in both your `.env` file or your `docker-compose.yml
 
 ```
 MAIL_MAILER=smtp
-MAIL_HOST=mailhog
-MAIL_PORT=1025
-MAIL_USERNAME=null
-MAIL_PASSWORD=null
-MAIL_FROM_ADDRESS="hello@example.com"
-MAIL_FROM_NAME="Speedtest Tracker"
-MAIL_SCHEME=null
+MAIL_HOST=
+MAIL_PORT=
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_FROM_ADDRESS=
+MAIL_FROM_NAME=
+MAIL_SCHEME=
 ```
 
-**GMAIL example:**
+***
 
-Steps for creating an app password.
+### Examples
 
-* Go to your [Google Account](https://myaccount.google.com) .
-* Select Security.
-* Under "How you sign in to Google," choose 2-Step Verification.
-* Click on App passwords.
-* Enter a name and generate a password.
-* Remember to copy the password before closing; otherwise, you'll need to create another one.
+#### Gmail
+
+1. Go to [https://myaccount.google.com/](https://myaccount.google.com/) and click on the "Security" tab.
+2. Under the "How you sign in to Google" section, click on "2-Step Verification".
+3. Click on "App passwords".
+4. Enter a name for your app password and click "Create". Use this password for the `MAIL_PASSWORD` env variable in the example configuration below.
 
 ```
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=465
-MAIL_USERNAME=username@gmail.com
+MAIL_USERNAME="username@gmail.com"
 MAIL_PASSWORD="password"
+MAIL_SCHEME=smtps
 MAIL_FROM_ADDRESS="username@gmail.com"
 MAIL_FROM_NAME="Speedtest Tracker"
-MAIL_SCHEME=tls
 ```
 
 ### Triggers
