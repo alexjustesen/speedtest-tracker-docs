@@ -20,4 +20,5 @@ description: >-
 
 ### API
 
-<table><thead><tr><th width="221">Name</th><th data-type="checkbox">Required</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td><code>API_RATE_LIMIT</code></td><td>false</td><td>Number of requests per minute to the API.<br><br>- Default: <code>60</code></td><td><code>100</code></td></tr></tbody></table>
+<table><thead><tr><th width="221">Name</th><th data-type="checkbox">Required</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td><code>API_RATE_LIMIT</code></td><td>false</td><td>Number of requests per minute to the API.<br><br>- Default: <code>60</code></td><td><code>100</code></td></tr><tr><td><code>API_MAX_RESULTS</code></td><td>false</td><td>Sets the maximum number of results returned by API.<br><br>- Default <code>500</code><br><td><code>500</code></td></tr></tbody></table>
+
