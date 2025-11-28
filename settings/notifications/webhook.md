@@ -10,16 +10,16 @@ Payload sent for a completed test
 
 ```json
 {
-  "result_id": 2,
+  "result_id": 1,
   "site_name": "Speedtest Tracker",
   "server_name": "Speedtest",
-  "server_id": 12345,
-  "isp": "Speedtest Communications",
-  "ping": 6.7,
-  "download": 93281280,
-  "upload": 28769728,
+  "server_id": 52365,
+  "isp": "Super Speed",
+  "ping": 2.782,
+  "download": 937874216,
+  "upload": 937797864,
   "packet_loss": 0,
-  "speedtest_url": "https://docs.speedtest-tracker.dev",
+  "speedtest_url": "https://www.speedtest.net/result/c/af8ddebf-7ef7-4b8d-b0c1-aaaaaaaaaaaa",
   "url": "http://localhost/admin/results"
 }
 ```
@@ -28,30 +28,33 @@ Payload sent for a threshold failure
 
 ```json
 {
-  "result_id": 8,
+  "result_id": 1,
   "site_name": "Speedtest Tracker",
-  "service": "Ookla",
-  "serverName": "Speedtest",
-  "serverId": 12345,
-  "isp": "Speedtest Communications",
-  "metrics": [
-    {
-      "name": "Download",
-      "threshold": "1000 Mbps",
-      "value": "91.78 Mbps"
+  "isp": "Super Speed",
+  "benchmarks": {
+    "download": {
+      "bar": "min",
+      "passed": false,
+      "type": "absolute",
+      "value": 2000,
+      "unit": "mbps"
     },
-    {
-      "name": "Upload",
-      "threshold": "1000 Mbps",
-      "value": "28.18 Mbps"
+    "upload": {
+      "bar": "min",
+      "passed": false,
+      "type": "absolute",
+      "value": 2000,
+      "unit": "mbps"
     },
-    {
-      "name": "Ping",
-      "threshold": "2 ms",
-      "value": "6.41 ms"
+    "ping": {
+      "bar": "max",
+      "passed": false,
+      "type": "absolute",
+      "value": 1,
+      "unit": "ms"
     }
-  ],
-  "speedtest_url": "https://docs.speedtest-tracker.dev",
+  },
+  "speedtest_url": "https://www.speedtest.net/result/c/af8ddebf-7ef7-4b8d-b0c1-aaaaaaaaa",
   "url": "http://localhost/admin/results"
 }
 ```
