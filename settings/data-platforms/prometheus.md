@@ -25,10 +25,7 @@ scrape_configs:
   - job_name: 'speedtest-tracker'
     scrape_interval: 60s # Adjust to your set schedule
     scrape_timeout: 10s
+    metrics_path: /prometheus
     static_configs:
       - targets: ['speedtest-tracker.local']
-    # Optional: if Basic Auth is enabled
-    basic_auth:
-      username: 'prometheus'
-      password: 'your-password'
 ```
