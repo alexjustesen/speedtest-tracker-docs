@@ -2,15 +2,11 @@
 
 Apprise provides a unified notification channel that lets you send alerts to numerous services—like Discord, Pushover, and Ntfy as well as many additional platforms
 
-<figure><img src="../../.gitbook/assets/apprise_notification.png" alt=""><figcaption><p>Apprise  settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/apprise_notifications.png" alt=""><figcaption><p>Apprise  settings</p></figcaption></figure>
 
 ### Sidecar Container
 
 To use Apprise, you’ll need to set up your own sidecar container. This container isn’t created automatically, so make sure to include it in your deployment. See the Apprise [Github Repo](https://github.com/caronc/apprise-api) for the setup instructions.
-
-#### Environment Variable&#x20;
-
-&#x20;To connect Speedtest Tracker with your Apprise sidecar container, define the `APPRISE_URL` environment variable with the container’s URL (e.g., `http://192.168.1.5:8000`)
 
 ### Apprise Channels
 
