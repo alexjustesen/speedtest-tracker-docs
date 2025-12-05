@@ -18,25 +18,25 @@ This guide assumes you know how to use the old "Docker" application.
 
 {% stepper %}
 {% step %}
-### Download Image
+#### Download Image
 
 Open the Docker interface of your Synology Device, search for `linuxserver/speedtest-tracker` in the Registry and download it.
 {% endstep %}
 
 {% step %}
-### Create Directory
+#### Create Directory
 
 Create a local directory (i.e. `/volume1/docker/speedtest-tracker`) which later can be mapped to the docker container.
 {% endstep %}
 
 {% step %}
-### Start Image
+#### Start Image
 
 Launch the image once the download is completed.
 {% endstep %}
 
 {% step %}
-### Map Ports
+#### Map Ports
 
 Map the ports to available ports.
 
@@ -51,13 +51,13 @@ Make sure the ports you choose are not used by any other application or DSM serv
 {% endstep %}
 
 {% step %}
-### Map Directory
+#### Map Directory
 
 Map the directory you created earlier to the mount path `/config`.
 {% endstep %}
 
 {% step %}
-### Finish
+#### Finish
 
 Review your settings and click "done".
 

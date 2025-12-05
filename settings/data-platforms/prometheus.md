@@ -2,11 +2,9 @@
 
 After each test, Speedtest Tracker exposes the metrics for Prometheus to scrape. For long term storage or custom visualizations.
 
-### Authentication
+### Allowed IPs
 
-To configure Speedtest Tracker to expose its metrics behind `basic auth`, apply the following settings
-
-<table><thead><tr><th width="127.33333333333331">Name</th><th width="206">Default</th><th>Description</th></tr></thead><tbody><tr><td>Use Basic Authentication</td><td>false</td><td>Enable / Disable <code>Basic Auth</code></td></tr><tr><td>username</td><td><code>blank</code></td><td>username for authentication </td></tr><tr><td>password</td><td><code>blank</code></td><td>password for authentication</td></tr></tbody></table>
+You can configure the Prometheus endpoint so it’s only accessible from specific IP addresses or networks. This can include single IPs or entire CIDR ranges.
 
 <figure><img src="../../.gitbook/assets/prometheus_settings.png" alt=""><figcaption></figcaption></figure>
 
