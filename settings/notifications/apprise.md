@@ -2,7 +2,7 @@
 
 Apprise provides a unified notification channel that lets you send alerts to numerous services—like Discord, Pushover, and Ntfy as well as many additional platforms
 
-<figure><img src="../../.gitbook/assets/apprise_notifiations.png" alt=""><figcaption><p>Apprise  settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/apprise_notifiations.png" alt=""><figcaption><p>Apprise settings</p></figcaption></figure>
 
 ### Apprise Server
 
@@ -14,4 +14,4 @@ Apprise channels are the formatted URLs used by Apprise to send notifications to
 
 ### Triggers
 
-<table><thead><tr><th width="237">Name</th><th>Description</th></tr></thead><tbody><tr><td>On completed speedtest</td><td>On each successful speedtest a notification will be send to the application.</td></tr><tr><td>On absolute threshold failure</td><td>On any absolute threshold failure a notification will be send to the application.</td></tr></tbody></table>
+<table><thead><tr><th width="237">Name</th><th>Description</th></tr></thead><tbody><tr><td>on every scheduled speedtest run</td><td>On each successful scheduled speedtest a notification will be send to the application.</td></tr><tr><td>on threshold failures for scheduled speedtests</td><td>On any absolute threshold failure for scheduled speedtest  a notification will be send to the application.</td></tr></tbody></table>
