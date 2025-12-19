@@ -2,8 +2,6 @@
 
 Apprise provides a unified notification channel that lets you send alerts to numerous services—like Discord, Pushover, and Ntfy as well as many additional platforms
 
-<figure><img src="../../.gitbook/assets/apprise_notifiations.png" alt=""><figcaption><p>Apprise settings</p></figcaption></figure>
-
 ### Why Apprise
 
 Apprise allows the application to sent notifications to a wide variety of services. It let us focus on features instead of maintaining X number of notification channels. Essentially helping us cut down on maintenance/feature requests.
