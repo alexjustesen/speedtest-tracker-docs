@@ -25,6 +25,14 @@ You need a `APP_KEY` for the encryption. See the [installation docs](../getting-
 
 </details>
 
+<details>
+
+<summary>I'm getting duplicate message via Apprise</summary>
+
+By default when sending an notifications via Apprise we wait up to 30 seconds for Apprise to respond back with any message. Incase this 30 seconds is exceeded, we will retry 3 times. In case of any very slow Apprise processing this might cause duplicated notifications. Please check the [logs](error-messages.md#troubleshooting) to see the the timeout happend
+
+</details>
+
 ### Time zones
 
 <details>
