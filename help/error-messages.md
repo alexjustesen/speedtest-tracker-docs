@@ -78,14 +78,6 @@ When the `SPEEDTEST_SKIP_IPS` environment variable is  Speedtest Tracker will ma
 
 </details>
 
-<details>
-
-<summary>Failed listing Ookla speedtest servers</summary>
-
-
-
-</details>
-
 ### Ookla Related
 
 <details>
