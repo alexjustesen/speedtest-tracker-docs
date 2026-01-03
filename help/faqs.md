@@ -55,20 +55,3 @@ Once set restart the container.
 Starting your cron schedule at an off-peak minute can help reduce network congestion or avoid overloading a speed test server. This [comment](https://github.com/alexjustesen/speedtest-tracker/issues/552#issuecomment-2028532010) on this issue can help you get the formatting right.
 
 </details>
-
-### Other
-
-<details>
-
-<summary>I'm getting a <code>500 | SERVER ERROR</code> error</summary>
-
-By default `APP_DEBUG` is set to `false` in production to prevent verbose error outputs. To debug the issue follow the steps below.
-
-1. Set `APP_DEBUG=true` as a environment variable
-2. Restart the container
-3. Reproduce the error by visiting the page or performing the action that caused the error
-4. View the output in the UI or in the logs to help resolve the issue, if you can not resolve it open an issue in the [GitHub](https://github.com/alexjustesen/speedtest-tracker/issues) repository
-5. In the output the line that starts with `[timestamp] production.ERROR:` is the error the server ran into
-6. Once the issue is resolved you can remove the `APP_DEBUG` environment variable
-
-</details>
