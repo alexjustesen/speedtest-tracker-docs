@@ -8,6 +8,12 @@ You can configure the Prometheus endpoint so it’s only accessible from specifi
 
 <figure><img src="../../.gitbook/assets/prometheus_settings.png" alt=""><figcaption></figcaption></figure>
 
+### Grafana Dashboard
+
+You can use this community made Grafana Dashboard to visualize your data.
+
+{% embed url="https://github.com/CrazyWolf13/Speedtest-Tracker-Prometheus" %}
+
 ### Data pattern
 
 Speedtest Tracker exports data in two categories: labels and metrics. Labels are used for filtering, while metrics are used for displaying data.
