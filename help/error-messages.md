@@ -2,7 +2,7 @@
 
 ### Troubleshooting
 
-For all below errros there will be more information provided in the container logs. You can check the logs for more details by checking the container logs by running;
+For all below errors there will be more information provided in the container logs. You can check the logs for more details by checking the container logs by running;
 
 `docker logs speedtest-tracker`&#x20;
 
