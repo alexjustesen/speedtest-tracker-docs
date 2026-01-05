@@ -49,8 +49,8 @@ You will need to get your user's `PUID` and `PGID`, you can do this by running `
         environment:
             - PUID= 
             - PGID=
-            - APP_KEY # Required
-            - <a data-footnote-ref href="#user-content-fn-1">APP_URL</a>= # Required
+            - <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a> # Required
+            - <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= # Required
             - DB_CONNECTION=sqlite
         volumes:
             - /path/to/data:/config
@@ -230,4 +230,6 @@ During the start the container there is a default username and password created.
 {% endstep %}
 {% endstepper %}
 
-[^1]: The URL where you'll access the app (e.g., `http://localhost:8080`)
+[^1]: Generate with: `echo -n 'base64:'; openssl rand -base64 32`
+
+[^2]: The URL where you'll access the app (e.g., `http://localhost:8080`)
