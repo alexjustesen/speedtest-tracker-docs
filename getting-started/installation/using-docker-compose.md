@@ -70,8 +70,8 @@ You will need to get your user's `PUID` and `PGID`, you can do this by running `
         environment:
             - PUID=
             - PGID=
-            - APP_KEY= # Required
-            - APP_URL= # Required
+            - <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a> # Required
+            - <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= # Required
             - DB_CONNECTION=mariadb
             - DB_HOST=db
             - DB_PORT=3306
@@ -116,8 +116,8 @@ services:
         environment:
             - PUID=
             - PGID=
-            - APP_KEY= # Required
-            - APP_URL= # Required
+            - <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a> # Required
+            - <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= # Required
             - DB_CONNECTION=mysql
             - DB_HOST=db
             - DB_PORT=3306
@@ -162,8 +162,8 @@ services:
         environment:
             - PUID=
             - PGID=
-            - APP_KEY= # Required
-            - APP_URL= # Required
+            - <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a> # Required
+            - <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= # Required
             - DB_CONNECTION=pgsql
             - DB_HOST=db
             - DB_PORT=5432

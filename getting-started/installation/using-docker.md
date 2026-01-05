@@ -59,7 +59,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID= \
     -e PGID= \
-    -e APP_KEY= \
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=mariadb \
     -e DB_HOST= \
     -e DB_PORT=3306 \
@@ -79,7 +80,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID= \
     -e PGID= \
-    -e APP_KEY= \
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=mysql \
     -e DB_HOST= \
     -e DB_PORT=3306 \
@@ -99,7 +101,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
-    -e APP_KEY=
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=pgsql \
     -e DB_HOST= \
     -e DB_PORT=5432 \
