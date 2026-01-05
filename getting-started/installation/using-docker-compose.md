@@ -38,8 +38,7 @@ You will need to get your user's `PUID` and `PGID`, you can do this by running `
 
 {% tabs %}
 {% tab title="SQLite" %}
-```yaml
-services:
+<pre class="language-yaml"><code class="lang-yaml">services:
     speedtest-tracker:
         image: lscr.io/linuxserver/speedtest-tracker:latest
         restart: unless-stopped
@@ -50,12 +49,13 @@ services:
         environment:
             - PUID= 
             - PGID=
-            - APP_KEY=
+            - APP_KEY # Required
+            - <a data-footnote-ref href="#user-content-fn-1">APP_URL</a>= # Required
             - DB_CONNECTION=sqlite
         volumes:
             - /path/to/data:/config
             - /path/to-custom-ssl-keys:/config/keys
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="MariaDB" %}
@@ -70,7 +70,8 @@ services:
         environment:
             - PUID=
             - PGID=
-            - APP_KEY=
+            - APP_KEY= # Required
+            - APP_URL= # Required
             - DB_CONNECTION=mariadb
             - DB_HOST=db
             - DB_PORT=3306
@@ -115,7 +116,8 @@ services:
         environment:
             - PUID=
             - PGID=
-            - APP_KEY=
+            - APP_KEY= # Required
+            - APP_URL= # Required
             - DB_CONNECTION=mysql
             - DB_HOST=db
             - DB_PORT=3306
@@ -160,7 +162,8 @@ services:
         environment:
             - PUID=
             - PGID=
-            - APP_KEY=
+            - APP_KEY= # Required
+            - APP_URL= # Required
             - DB_CONNECTION=pgsql
             - DB_HOST=db
             - DB_PORT=5432
@@ -226,3 +229,5 @@ You can now start the container accordingly the platform you are on.
 During the start the container there is a default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-account-details) after logging in.
 {% endstep %}
 {% endstepper %}
+
+[^1]: The URL where you'll access the app (e.g., `http://localhost:8080`)
