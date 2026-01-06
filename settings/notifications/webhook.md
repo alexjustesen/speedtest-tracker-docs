@@ -46,7 +46,7 @@ A webhook will send a JSON payload to a receiver of your choice
 {% endtab %}
 
 {% tab title="Completed test" %}
-```
+```json
 {
   "result_id": 17,
   "site_name": "Speedtest Tracker",
