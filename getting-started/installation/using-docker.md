@@ -38,18 +38,18 @@ You will need to get your user's `PUID` and `PGID`, you can do this by running `
 
 {% tabs %}
 {% tab title="SQLite" %}
-```docker
-docker run -d --name speedtest-tracker --restart unless-stopped \
+<pre class="language-docker"><code class="lang-docker">docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8080:80 \
     -p 8443:443 \
     -e PUID= \
     -e PGID= \
-    -e APP_KEY= \
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=sqlite \
     -v /path/to/data:/config \
     -v /path/to-custom-ssl-keys:/config/keys \
     lscr.io/linuxserver/speedtest-tracker:latest
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="MariaDB" %}
@@ -59,7 +59,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID= \
     -e PGID= \
-    -e APP_KEY= \
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=mariadb \
     -e DB_HOST= \
     -e DB_PORT=3306 \
@@ -79,7 +80,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID= \
     -e PGID= \
-    -e APP_KEY= \
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=mysql \
     -e DB_HOST= \
     -e DB_PORT=3306 \
@@ -99,7 +101,8 @@ docker run -d --name speedtest-tracker --restart unless-stopped \
     -p 8443:443 \
     -e PUID=1000 \
     -e PGID=1000 \
-    -e APP_KEY=
+    -e <a data-footnote-ref href="#user-content-fn-1">APP_KEY</a>= \
+    -e <a data-footnote-ref href="#user-content-fn-2">APP_URL</a>= \
     -e DB_CONNECTION=pgsql \
     -e DB_HOST= \
     -e DB_PORT=5432 \
@@ -146,3 +149,7 @@ You can now start the container accordingly the platform you are on.
 During the start the container there is a default username and password created. Use the [default login](../../security/authentication.md#default-user-account) credentials to login to the application. You can [change the default user](../../security/authentication.md#change-account-details) after logging in.
 {% endstep %}
 {% endstepper %}
+
+[^1]: Generate with: `echo -n 'base64:'; openssl rand -base64 32`
+
+[^2]: The URL where you'll access the app (e.g., `http://localhost:8080`)
