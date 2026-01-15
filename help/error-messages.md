@@ -2,11 +2,9 @@
 
 ### Troubleshooting
 
-For all below errors there will be more information provided in the container logs. You can check the logs for more details by checking the container logs by running;
+For all below errors there will be more information provided in the container logs. You can check the logs for more details by checking the container logs by running `docker logs speedtest-tracker`.
 
-`docker logs speedtest-tracker`&#x20;
-
-or any other equivalent command for your setup.&#x20;
+or any other equivalent command for your setup.
 
 <details>
 
@@ -37,7 +35,7 @@ The `500 | SERVER ERROR` is caused by either a bug or a misconfiguration. You mu
 
 <summary>Unsupported cipher or incorrect key length. Supported ciphers are: <code>aes-128-cbc</code>, <code>aes-256-cbc</code>, <code>aes-128-gcm,</code> <code>aes-256-gcm</code>.</summary>
 
-This error is shown when the `APP_KEY` is not set or not set correctly. Make suer you set the `APP_KEY`  as described in the [installation steps](../getting-started/installation/using-docker-compose.md#install-with-docker-compose).
+This error is shown when the `APP_KEY` is not set or not set correctly. Make suer you set the `APP_KEY` as described in the [installation steps](../getting-started/installation/using-docker-compose.md#install-with-docker-compose).
 
 </details>
 
@@ -65,7 +63,7 @@ When a speedtest is being [processed](../other/speedtest-process.md) Speedtest T
 
 <summary>Failed to fetch external IP address</summary>
 
-When the `SPEEDTEST_SKIP_IPS` environment variable is  Speedtest Tracker will make a call to [http://icanhazip.com](http://icanhazip.com/) to get your external IP address. This is done check if your external IP address (WAN IP) should be skipped.
+When the `SPEEDTEST_SKIP_IPS` environment variable is Speedtest Tracker will make a call to [http://icanhazip.com](http://icanhazip.com/) to get your external IP address. This is done check if your external IP address (WAN IP) should be skipped.
 
 **Possible reasons**:
 
@@ -108,9 +106,9 @@ Not 100% sure what causes this exception yet but it's likely when the CLI can't 
 
 <summary>Unable to retrieve Ookla servers, check internet connection and see logs.</summary>
 
-This errors is shown when we try to retrieve the Ookla server list when selecting an server wehn running an manual speedtest. We get the list from: [https://www.speedtest.net/api/js/servers](https://www.speedtest.net/api/js/servers).&#x20;
+This errors is shown when we try to retrieve the Ookla server list when selecting an server wehn running an manual speedtest. We get the list from: [https://www.speedtest.net/api/js/servers](https://www.speedtest.net/api/js/servers).
 
-This error is useually caused by a docker network problem or no internet connection. You can check the [container logs](error-messages.md#troubleshooting) for more details.&#x20;
+This error is useually caused by a docker network problem or no internet connection. You can check the [container logs](error-messages.md#troubleshooting) for more details.
 
 </details>
 
@@ -118,23 +116,9 @@ This error is useually caused by a docker network problem or no internet connect
 
 <details>
 
-<summary>Failed to bulk write to InfluxDB</summary>
+<summary>Failed to write to InfluxDB</summary>
 
-When Speedtest Tracker fails to write data to InfluxDB this error is shown. The [container logs](error-messages.md#troubleshooting) will show more details on why it failed.&#x20;
-
-**Possible reasons:**
-
-* Connectivity problem to InfluxDB
-* Problem with authentication
-* Specified bucket does not exist in InfluxDB
-
-</details>
-
-<details>
-
-<summary>Failed to write test data to InfluxDB.</summary>
-
-When Speedtest Tracker fails to write data to InfluxDB this error is shown. The [container logs](error-messages.md#troubleshooting) will show more details on why it failed.&#x20;
+When Speedtest Tracker fails to write data to InfluxDB this error is shown. The [container logs](error-messages.md#troubleshooting) will show more details on why it failed.
 
 **Possible reasons:**
 
@@ -143,20 +127,3 @@ When Speedtest Tracker fails to write data to InfluxDB this error is shown. The 
 * Specified bucket does not exist in InfluxDB
 
 </details>
-
-<details>
-
-<summary>Failed to write to InfluxDB.</summary>
-
-When Speedtest Tracker fails to write data to InfluxDB this error is shown. The [container logs](error-messages.md#troubleshooting) will show more details on why it failed.&#x20;
-
-**Possible reasons:**
-
-* Connectivity problem to influxdb
-* Problem with authentication
-* Specified bucket does not exist in InfluxDB
-
-</details>
-
-
-
