@@ -37,15 +37,6 @@ By default when sending an notifications via Apprise we wait up to 30 seconds fo
 
 <details>
 
-<summary>How do I set the display and schedule time zone?</summary>
-
-1. Set `DISPLAY_TIMEZONE` environment variables to your local timezone.
-2. Restart the container
-
-</details>
-
-<details>
-
 <summary>My display timestamps or scheduled tests aren't correct.</summary>
 
 Speedtest Tracker assumes your application and database containers are set to `UTC` by default. If your database instance has your local time zone set it needs to **match** that set in `APP_TIMEZONE` and `DISPLAY_TIMEZONE` environment variables.
