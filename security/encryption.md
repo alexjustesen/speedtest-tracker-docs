@@ -7,5 +7,5 @@ An application key (`APP_KEY`) is used for encryption. It is a base64 encoded st
 Run the command below to generate your `APP_KEY`.
 
 ```bash
-echo -n 'base64:'; openssl rand -base64 32;
+echo -n 'base64:'; openssl rand -base64 24;
 ```
