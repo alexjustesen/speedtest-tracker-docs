@@ -7,5 +7,9 @@ An application key (`APP_KEY`) is used for encryption. It is a base64 encoded st
 Run the command below to generate your `APP_KEY`.
 
 ```bash
-echo -n 'base64:'; openssl rand -base64 32;
+echo "base64:$(openssl rand -base64 32 2>/dev/null)"
 ```
+
+{% hint style="info" %}
+Some OpenSSL installs print a warning such as `can't open config file: etc/ssl/openssl.cnf` before the generated key. The command above suppresses that warning so you can copy a clean `APP_KEY` value.
+{% endhint %}

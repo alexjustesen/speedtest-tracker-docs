@@ -21,7 +21,7 @@ Docker run commands can be found on the [Using Docker](using-docker.md) page and
 Run the command below to generate a key, the key is required for [encryption](../../security/encryption.md). Copy this key including the `base64:` prefix and paste it as your `APP_KEY` value.
 
 ```bash
-echo -n 'base64:'; openssl rand -base64 32;
+echo "base64:$(openssl rand -base64 32 2>/dev/null)"
 ```
 {% endstep %}
 

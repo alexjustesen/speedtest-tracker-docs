@@ -46,7 +46,7 @@ APP_TIMEZONE=UTC
 ```
 
 {% hint style="info" %}
-Generate the APP\_KEY at with the command; `echo -n 'base64:'; openssl rand -base64 32;`
+Generate the APP\_KEY with: `echo "base64:$(openssl rand -base64 32 2>/dev/null)"`
 {% endhint %}
 
 #### 3. Install Composer dependencies
