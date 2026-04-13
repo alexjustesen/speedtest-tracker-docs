@@ -21,7 +21,7 @@ Docker run commands assume you already have a database installed and configured.
 Run the command below to generate a key, the key is required for [encryption](../../security/encryption.md). Copy this key including the `base64:` prefix and paste it as your `APP_KEY` value.
 
 ```bash
-echo -n 'base64:'; openssl rand -base64 32;
+echo "base64:$(openssl rand -base64 32 2>/dev/null)"
 ```
 {% endstep %}
 
@@ -150,6 +150,6 @@ During the start the container there is a default username and password created.
 {% endstep %}
 {% endstepper %}
 
-[^1]: Generate with: `echo -n 'base64:'; openssl rand -base64 32`
+[^1]: Generate with: `echo "base64:$(openssl rand -base64 32 2>/dev/null)"`
 
 [^2]: The URL where you'll access the app (e.g., `http://localhost:8080`)
