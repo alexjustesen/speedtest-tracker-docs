@@ -9,7 +9,3 @@ Run the command below to generate your `APP_KEY`.
 ```bash
 echo "base64:$(openssl rand -base64 32 2>/dev/null)"
 ```
-
-{% hint style="info" %}
-Some OpenSSL installs print a warning such as `can't open config file: etc/ssl/openssl.cnf` before the generated key. The command above suppresses that warning so you can copy a clean `APP_KEY` value.
-{% endhint %}
