@@ -37,6 +37,8 @@
   * [Database](settings/notifications/database.md)
   * [Mail](settings/notifications/mail.md)
   * [Webhook](settings/notifications/webhook.md)
+* [General](settings/general/README.md)
+  * [Charts](settings/general/charts.md)
 
 ## 👀 Other
 
