@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Features](features.md)
 * [Releases Notes](releases.md)
+* [Server Explorer](https://explorer.speedtest-tracker.dev/)
 
 ## 🚀 Getting Started
 

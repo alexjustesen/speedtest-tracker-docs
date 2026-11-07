@@ -7,8 +7,8 @@ description: >-
 
 # Introduction
 
-{% hint style="info" %}
-Docs are up-to-date through version: `v1.14.x`
+{% hint style="info" icon="rocket-launch" %}
+The new [Server Explorer](https://explorer.speedtest-tracker.dev/) has launched!
 {% endhint %}
 
 <figure><img src=".gitbook/assets/dashboard (1).png" alt=""><figcaption></figcaption></figure>
